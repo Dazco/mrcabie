@@ -41,9 +41,49 @@
                 </div>
                 <div class="col-lg-6 about-right">
                     <h1>Who is Mr Cabie</h1>
-                    <h4>We are here to listen from you deliver exellence</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                    <h4>A Taxi Cab Service for Everyone</h4>
+                    <p>
+                        Mr. Cabie offers the most affordable and reliable cab services 24/7, You can get our best cab services   in Rudrapur, Haldwani, Nainital, Pantnagar, Haridwar, Dehradun and other cities
                     </p>
+                    <h4>We offer 3 services:</h4>
+                    <ul>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Local Cabs (Inside City)</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Outstation Cabs (Outside City)</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> One Way Cabs (One Side Routes only)</li>
+                    </ul>
+
+                    {{--<h5 class="mt-3">Local cab service</h5>
+                    <p>Cabs Inside the city, and within a limit of 30 km. This service is provided in Rudrapur, Pantnagar, Haldwani and Dehradun</p>
+
+                    <h5 class="mt-3">Local cab service</h5>
+                    <p>Cabs Inside the city, and within a limit of 30 km. This service is provided in Rudrapur, Pantnagar, Haldwani and Dehradun</p>--}}
+                </div>
+            </div>
+            <h2 class="text-center mb-4">Popular Routes</h2>
+            <div class="row align-items-center">
+                <div class="col-sm-4">
+                    <ul>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Rudrapur to Nainital</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Delhi to Nainital</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Rudrapur to Delhi</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Rudrapur to Haldwani</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Haldwani to Delhi</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Haridwar to Delhi</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Delhi to Rudrapur</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Pune to Mumbai</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Dehradun to Delhi</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Chandigarh to Delhi</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Nainital to Delhi</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Haldwani to Nainital</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -56,19 +96,16 @@
             <div class="row section-title">
                 <h1>Gallery</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-4 single-gallery">
-                    <a href="img/g1.jpg" class="img-gal"><img class="img-fluid" src="img/g1.jpg" alt=""></a>
-                    <a href="img/g4.jpg" class="img-gal"><img class="img-fluid" src="img/g4.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-4 single-gallery">
-                    <a href="img/g2.jpg" class="img-gal"><img class="img-fluid" src="img/g2.jpg" alt=""></a>
-                    <a href="img/g5.jpg" class="img-gal"><img class="img-fluid" src="img/g5.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-4 single-gallery">
-                    <a href="img/g3.jpg" class="img-gal"><img class="img-fluid" src="img/g3.jpg" alt=""></a>
-                    <a href="img/g6.jpg" class="img-gal"><img class="img-fluid" src="img/g6.jpg" alt=""></a>
-                </div>
+            <div class="row d-flex justify-content-center">
+                @if($media && count($media) > 0)
+                    @foreach($media as $photo)
+                        <div class="col-lg-4 mb-3">
+                            <a href="{{$photo->image}}" class="img-gal"><img class="img-fluid" src="{{$photo->image}}" alt="{{$photo->title}}"></a>
+                        </div>
+                    @endforeach
+                @else
+                    <h1 class="text-secondary">No Images Uploaded</h1>
+                @endif
             </div>
         </div>
     </section>

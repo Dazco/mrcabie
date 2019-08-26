@@ -39,6 +39,42 @@ $black			: #222;
 /* =================================== */
 /*  Added Style
 /* =================================== */
+/*== Preloader Area CSS Start ==*/
+
+body.loader-active {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.preloader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.preloader-spinner {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.loader-content {
+  width: 150px;
+}
+
+/*== Preloader Area CSS End ==*/
+
 .menu-active a{
     color: #f9d700 !important;
 }

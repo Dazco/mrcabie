@@ -29,13 +29,23 @@
     @yield("styles")
     <link rel="stylesheet" href="{{url('css/main.css')}}">
 </head>
-<body>
+<body class="loader-active">
+<!--== Preloader Area Start ==-->
+<div class="preloader">
+    <div class="preloader-spinner">
+        <div class="loader-content">
+            <img src="{{url('img/preloader.gif')}}" alt="MR CABIE">
+        </div>
+    </div>
+</div>
+<!--== Preloader Area End ==-->
+
 <header id="header">
     <div class="header-top">
     </div>
     <div class="container main-menu">
         <div class="row align-items-center justify-content-between d-flex">
-            <a href="{{route("home")}}"><img src="img/logo.png" alt="Mr Cabie logo" title="Mr Cabie" /></a>
+            <a href="{{route("home")}}"><img src="{{url('img/logo.png')}}" alt="Mr Cabie logo" title="Mr Cabie" /></a>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
                     <li class="{{Request::is("/")?'menu-active':''}}"><a href="{{route("home")}}">Home</a></li>
@@ -58,7 +68,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
                     <h6>About Us</h6>
-                    <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum<br><a href="{{route('about')}}" class="text-warning">read more...</a></p>
+                    <p>Mr. Cabie offers the most affordable and reliable cab services 24/7, You can get our best cab services in Rudrapur, Haldwani, Nainital, Pantnagar, Haridwar, Dehradun and other cities <br><a href="{{route('about')}}" class="text-warning">read more...</a></p>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6">
@@ -66,8 +76,8 @@
                     <h6>Our Contacts</h6>
                     <p> 22 Ayodele Street, BRT Terminal, Fadeyi , Lagos</p>
                     <ul>
-                        <li><span class="text-warning font-weight-bold">Tel:</span> +234 810 082 8886</li>
-                        <li><span class="text-warning font-weight-bold">Tel:</span> +234 810 082 8886</li>
+                        <li><span class="text-warning font-weight-bold">Tel:</span> 911-911-6955</li>
+                        <li><span class="text-warning font-weight-bold">Tel:</span> 911-911-8876</li>
                     </ul>
                 </div>
             </div>
@@ -76,10 +86,8 @@
                     <h6>Follow Us</h6>
                     <p>Let us be social</p>
                     <div class="footer-social d-flex align-items-center">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                        <a href="#"><i class="fa fa-behance"></i></a>
+                        <a href="https://www.facebook.com/2166298106734258"><i class="fa fa-facebook fa-lg"></i></a>
+                        <a href="https://www.instagram.com/mr.cabie"><i class="fa fa-instagram fa-lg"></i></a>
                     </div>
                 </div>
             </div>
@@ -106,7 +114,7 @@
             </p>
         </div>
     </div>
-    <img class="footer-bottom" src="img/footer-bottom.png" alt="">
+    <img class="footer-bottom" src="{{url('img/footer-bottom.png')}}" alt="">
 </footer>
 <!-- End footer Area -->
 

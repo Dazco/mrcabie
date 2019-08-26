@@ -7,7 +7,7 @@
 @endsection
 
 @section('title')
-    About|MRCABIE
+    Gallery - MRCABIE
 @endsection
 
 @section('styles')
@@ -37,25 +37,16 @@
             <div class="row section-title">
                 <h1>Gallery</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-4 single-gallery">
-                    <a href="img/g1.jpg" class="img-gal"><img class="img-fluid" src="img/g1.jpg" alt=""></a>
-                    <a href="img/g4.jpg" class="img-gal"><img class="img-fluid" src="img/g4.jpg" alt=""></a>
-                    <a href="img/g1.jpg" class="img-gal"><img class="img-fluid" src="img/g1.jpg" alt=""></a>
-                    <a href="img/g4.jpg" class="img-gal"><img class="img-fluid" src="img/g4.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-4 single-gallery">
-                    <a href="img/g2.jpg" class="img-gal"><img class="img-fluid" src="img/g2.jpg" alt=""></a>
-                    <a href="img/g5.jpg" class="img-gal"><img class="img-fluid" src="img/g5.jpg" alt=""></a>
-                    <a href="img/g2.jpg" class="img-gal"><img class="img-fluid" src="img/g2.jpg" alt=""></a>
-                    <a href="img/g5.jpg" class="img-gal"><img class="img-fluid" src="img/g5.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-4 single-gallery">
-                    <a href="img/g3.jpg" class="img-gal"><img class="img-fluid" src="img/g3.jpg" alt=""></a>
-                    <a href="img/g6.jpg" class="img-gal"><img class="img-fluid" src="img/g6.jpg" alt=""></a>
-                    <a href="img/g3.jpg" class="img-gal"><img class="img-fluid" src="img/g3.jpg" alt=""></a>
-                    <a href="img/g6.jpg" class="img-gal"><img class="img-fluid" src="img/g6.jpg" alt=""></a>
-                </div>
+            <div class="row d-flex justify-content-center">
+                @if($media && count($media) > 0)
+                    @foreach($media as $photo)
+                        <div class="col-lg-4 mb-3">
+                            <a href="{{$photo->image}}" class="img-gal"><img class="img-fluid" src="{{$photo->image}}" alt="{{$photo->title}}"></a>
+                        </div>
+                    @endforeach
+                @else
+                <h1 class="text-secondary">No Images Uploaded</h1>
+                @endif
             </div>
         </div>
     </section>

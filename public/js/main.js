@@ -1,3 +1,9 @@
+$(window).on("load", ()=>{
+    $('.preloader').fadeOut();
+    $('.preloader-spinner').delay(350).fadeOut('slow');
+    $('body').removeClass('loader-active');
+}); //window load End
+
 $(document).ready(function() {
     "use strict";
 

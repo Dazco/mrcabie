@@ -28,10 +28,12 @@
                     <p class="pt-10 pb-10 text-white">
                         In just a few minutes, you can book your own taxi in the comforts of your home.
                     </p>
-                    {{--<a href="#" class="primary-btn text-uppercase">Call for tax</a>--}}
                 </div>
                 <div class="col-lg-4  col-md-6 header-right">
-                    <h4 id="form_header" class="pb-15 animated bounce slower">Book Your Texi Online!</h4>
+                    <h3 id="form_header" class="pt-5 text-black text-uppercase">911-911-6955 911-911-8876</h3>
+                    <h4 class="pt-15 pb-15 animated bounce slower">Book Your Cab Online!</h4>
+                    @include("includes.session_flash")
+                    @include("includes.form_error")
                     <!-- List group -->
                     <div class="list-group list-group-horizontal tabbable-tabs mb-3" role="tablist">
                         <a class="list-group-item list-group-item-action active" data-toggle="list" href="#oneway_trip" role="tab">ONE WAY</a>
@@ -41,19 +43,18 @@
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div class="tab-pane active" id="oneway_trip" role="tabpanel">
-                            <form class="form">
-                                {{Form::token()}}
-                                <input type="hidden" name="trip" value="round">
+                            <form class="form" method="GET" action="{{route("select")}}">
+                                <input type="hidden" name="trip" value="oneway">
                                 <div class="form-group">
-                                    <input type="text" name="pickup_place" class="form-control autocomplete" autocomplete="off" placeholder="From">
+                                    <input type="text" name="pickup_city" class="form-control autocomplete" autocomplete="off" placeholder="From" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="drop_place" class="form-control autocomplete" autocomplete="off" placeholder="To">
+                                    <input type="text" name="drop_city" class="form-control autocomplete" autocomplete="off" placeholder="To" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="pickup_date" class="text-center text-dark font-weight-bold m-0 p-0">Pickup Date</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="pickup_date" class="dates form-control"  placeholder="Pickup Date" type="date" name="pickup_date">
+                                        <input id="pickup_date" class="dates form-control"  placeholder="Pickup Date" type="date" name="pickup_date" required>
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
                                         </div>
@@ -62,31 +63,35 @@
                                 <div class="form-group">
                                     <label for="pickup_time" class="text-center text-dark font-weight-bold m-0 p-0">Pickup Time</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="pickup_time" class="dates form-control" type="time" name="pickup_time">
+                                        <input id="pickup_time" class="dates form-control" type="time" name="pickup_time"  required>
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-clock"></span></span>
                                         </div>
                                     </div>
                                 </div>
+                                <input type="hidden" name="pickupLat" data-pickup-lat>
+                                <input type="hidden" name="pickupLon" data-pickup-lon>
+                                <input type="hidden" name="dropLat" data-drop-lat>
+                                <input type="hidden" name="dropLon" data-drop-lon>
+                                {{Form::token()}}
                                 <div class="form-group">
-                                    <button class="btn btn-default btn-lg btn-block text-center text-uppercase">Search Cabs</button>
+                                    <button type="submit" class="btn btn-default btn-lg btn-block text-center text-uppercase">Search Cabs</button>
                                 </div>
                             </form>
                         </div>
                         <div class="tab-pane" id="round_trip" role="tabpanel">
-                            <form class="form">
-                                {{Form::token()}}
+                            <form class="form" method="GET" action="{{route("select")}}">
                                 <input type="hidden" name="trip" value="round">
                                 <div class="form-group">
-                                    <input type="text" name="pickup_place" class="form-control autocomplete" autocomplete="off" placeholder="From">
+                                    <input type="text" name="pickup_city" class="form-control autocomplete" autocomplete="off" placeholder="From" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="drop_place" class="form-control autocomplete" autocomplete="off" placeholder="To">
+                                    <input type="text" name="drop_city" class="form-control autocomplete" autocomplete="off" placeholder="To" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="pickup_date" class="text-center text-dark font-weight-bold m-0 p-0">Pickup Date</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="pickup_date" class="dates form-control"  placeholder="Pickup Date" type="date" name="pickup_date">
+                                        <input id="pickup_date" class="dates form-control"  placeholder="Pickup Date" type="date" name="pickup_date" required>
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
                                         </div>
@@ -95,7 +100,7 @@
                                 <div class="form-group">
                                     <label for="pickup_time" class="text-center text-dark font-weight-bold m-0 p-0">Pickup Time</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="pickup_time" class="dates form-control" type="time" name="pickup_time">
+                                        <input id="pickup_time" class="dates form-control" type="time" name="pickup_time" required>
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-clock"></span></span>
                                         </div>
@@ -104,7 +109,7 @@
                                 <div class="form-group">
                                     <label for="return_date" class="text-center text-dark font-weight-bold m-0 p-0">Return Date</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="return_date" class="dates form-control" type="date" name="return_date">
+                                        <input id="return_date" class="dates form-control" type="date" name="return_date" required>
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
                                         </div>
@@ -113,14 +118,19 @@
                                 <div class="form-group">
                                     <label for="return_time" class="text-center text-dark font-weight-bold m-0 p-0">Return Time</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="return_time" class="dates form-control" type="time" name="return_time">
+                                        <input id="return_time" class="dates form-control" type="time" name="return_time" required>
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-clock"></span></span>
                                         </div>
                                     </div>
                                 </div>
+                                <input type="hidden" name="pickupLat" data-pickup-lat>
+                                <input type="hidden" name="pickupLon" data-pickup-lon>
+                                <input type="hidden" name="dropLat" data-drop-lat>
+                                <input type="hidden" name="dropLon" data-drop-lon>
+                                {{Form::token()}}
                                 <div class="form-group">
-                                    <button class="btn btn-default btn-lg btn-block text-center text-uppercase">Search Cabs</button>
+                                    <button type="submit" class="btn btn-default btn-lg btn-block text-center text-uppercase">Search Cabs</button>
                                 </div>
                             </form>
                         </div>
@@ -139,9 +149,10 @@
                     <img class="img-fluid" src="img/about-img.jpg" alt="">
                 </div>
                 <div class="col-lg-6 about-right">
-                    <h1>Who is Mr Cabbie?</h1>
-                    <h4>We are here to listen from you deliver exellence</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                    <h1>Who is Mr Cabie?</h1>
+                    <h4>A Taxi Cab Service for Everyone</h4>
+                    <p>
+                        Mr. Cabie offers the most affordable and reliable cab services 24/7, You can get our best cab services   in Rudrapur, Haldwani, Nainital, Pantnagar, Haridwar, Dehradun and other cities
                     </p>
                     <a class="text-uppercase primary-btn" href="{{route('about')}}">Get Details</a>
                 </div>
@@ -155,28 +166,27 @@
         <div class="container">
             <div class="row section-title">
                 <h1>What Services we offer to our clients</h1>
-                <p>Who are in extremely love with eco friendly system.</p>
             </div>
             <div class="row">
                 <div class="col-lg-4 single-service">
-                    <span class="lnr lnr-car"></span>
-                    <a href="#"><h4>Taxi Service</h4></a>
+                    <span class="lnr lnr-location"></span>
+                    <a href="#"><h4>LOCAL CAB SERVICE</h4></a>
                     <p>
-                        Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+                        Wanna book taxi / cabs within the city? We have the local cab service for you.Usage of the Internet is becoming more common due to rapid advancement of technology and power.
                     </p>
                 </div>
                 <div class="col-lg-4 single-service">
-                    <span class="lnr lnr-briefcase"></span>
-                    <a href="#"><h4>Office Pick-ups</h4></a>
+                    <span class="lnr lnr-car"></span>
+                    <a href="#"><h4>OUTSTATION CAB SERVICE</h4></a>
                     <p>
-                        Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+                        Planning to go on long routes? Contact us, we will avail you the best outstation taxi /cabs.
                     </p>
                 </div>
                 <div class="col-lg-4 single-service">
                     <span class="lnr lnr-bus"></span>
-                    <a href="#"><h4>Event Transportation</h4></a>
+                    <a href="#"><h4>ONE WAY CAB SERVICE</h4></a>
                     <p>
-                        Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+                        The best taxi cabs now available at lowest fares
                     </p>
                 </div>
             </div>
@@ -209,8 +219,9 @@
     <script src="https://cdn.jsdelivr.net/npm/places.js@1.16.4"></script>
     <script>
         $(document).ready(()=>{
+            const arr = [];
             for (container of document.querySelectorAll(".autocomplete")){
-                places({
+                arr.push(places({
                     appId: 'plCISBIJPEJ6',
                     apiKey: '4026e03ec5b0b25deedd7d3e41c0e5d9',
                     container: container,
@@ -218,13 +229,29 @@
                     countries: ['in'], // Search in India
                     type: 'city', // Search only for cities names
                     aroundLatLngViaIP: false // disable the extra search/boost around the source IP
-                });
+                }));
             }
+            arr[0].on("change", (e)=>{
+                document.querySelector("#oneway_trip [data-pickup-lat]").value = e.suggestion.latlng.lat;
+                document.querySelector("#oneway_trip [data-pickup-lon]").value = e.suggestion.latlng.lng;
+            });
+            arr[1].on("change", (e)=>{
+                document.querySelector("#oneway_trip [data-drop-lat]").value = e.suggestion.latlng.lat;
+                document.querySelector("#oneway_trip [data-drop-lon]").value = e.suggestion.latlng.lng;
+            });
+            arr[2].on("change", (e)=>{
+                document.querySelector("#round_trip [data-pickup-lat]").value = e.suggestion.latlng.lat;
+                document.querySelector("#round_trip [data-pickup-lon]").value = e.suggestion.latlng.lng;
+            });
+            arr[3].on("change", (e)=>{
+                document.querySelector("#round_trip [data-drop-lat]").value = e.suggestion.latlng.lat;
+                document.querySelector("#round_trip [data-drop-lon]").value = e.suggestion.latlng.lng;
+            });
             document.querySelector("a[href='#oneway_trip']").addEventListener("click", ()=>{
-                if($(window).width() > 750) $("#form_header").removeClass("mt-50");
+                if($(window).width() > 750) $("#form_header").removeClass("mt-25");
             }, false);
             document.querySelector("a[href='#round_trip']").addEventListener("click", ()=>{
-                if($(window).width() > 750) $("#form_header").addClass("mt-50");
+                if($(window).width() > 750) $("#form_header").addClass("mt-25");
             }, false);
         });
     </script>

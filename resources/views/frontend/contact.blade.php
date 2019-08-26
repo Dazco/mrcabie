@@ -56,8 +56,8 @@
                             <span class="lnr lnr-phone-handset"></span>
                         </div>
                         <div class="contact-details">
-                            <h5>00 (958) 9865 562</h5>
-                            <p>Mon to Fri 9am to 6 pm</p>
+                            <h5>911-911-6955</h5>
+                            <p>Mon to Sat 8am to 7 pm</p>
                         </div>
                     </div>
                     <div class="single-contact-address d-flex flex-row">

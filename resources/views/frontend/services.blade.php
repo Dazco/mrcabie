@@ -29,38 +29,38 @@
     </section>
     <!-- End banner Area -->
 
-    <!-- Start services Area -->
-    <section class="services-area section-gap">
-        <div class="container">
-            <div class="row section-title">
-                <h1>What Services we offer to our clients</h1>
+<!-- Start services Area -->
+<section class="services-area pb-120 mt-5">
+    <div class="container">
+        <div class="row section-title">
+            <h1>What Services we offer to our clients</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 single-service">
+                <span class="lnr lnr-location"></span>
+                <a href="#"><h4>LOCAL CAB SERVICE</h4></a>
+                <p>
+                    Wanna book taxi / cabs within the city? We have the local cab service for you.Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+                </p>
             </div>
-            <div class="row">
-                <div class="col-lg-4 single-service">
-                    <span class="lnr lnr-car"></span>
-                    <a href="#"><h4>Taxi Service</h4></a>
-                    <p>
-                        Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-                    </p>
-                </div>
-                <div class="col-lg-4 single-service">
-                    <span class="lnr lnr-briefcase"></span>
-                    <a href="#"><h4>Office Pick-ups</h4></a>
-                    <p>
-                        Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-                    </p>
-                </div>
-                <div class="col-lg-4 single-service">
-                    <span class="lnr lnr-bus"></span>
-                    <a href="#"><h4>Event Transportation</h4></a>
-                    <p>
-                        Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-                    </p>
-                </div>
+            <div class="col-lg-4 single-service">
+                <span class="lnr lnr-car"></span>
+                <a href="#"><h4>OUTSTATION CAB SERVICE</h4></a>
+                <p>
+                    Planning to go on long routes? Contact us, we will avail you the best outstation taxi /cabs.
+                </p>
+            </div>
+            <div class="col-lg-4 single-service">
+                <span class="lnr lnr-bus"></span>
+                <a href="#"><h4>ONE WAY CAB SERVICE</h4></a>
+                <p>
+                    The best taxi cabs now available at lowest fares
+                </p>
             </div>
         </div>
-    </section>
-    <!-- End services Area -->
+    </div>
+</section>
+<!-- End services Area -->
 
     <!-- Start home-calltoaction Area -->
     <section class="home-calltoaction-area relative">
@@ -81,24 +81,25 @@
     </section>
     <!-- End home-calltoaction Area -->
 
-    <!-- Start home-about Area -->
-    <section class="home-about-area section-gap">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 about-left">
-                    <img class="img-fluid" src="img/about-img.jpg" alt="">
-                </div>
-                <div class="col-lg-6 about-right">
-                    <h1>Who is Mr Cabbie?</h1>
-                    <h4>We are here to listen from you deliver exellence</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-                    </p>
-                    <a class="text-uppercase primary-btn" href="{{route('about')}}">Get Details</a>
-                </div>
+<!-- Start home-about Area -->
+<section class="home-about-area section-gap">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 about-left">
+                <img class="img-fluid" src="img/about-img.jpg" alt="">
+            </div>
+            <div class="col-lg-6 about-right">
+                <h1>Who is Mr Cabbie?</h1>
+                <h4>A Taxi Cab Service for Everyone</h4>
+                <p>
+                    Mr. Cabie offers the most affordable and reliable cab services 24/7, You can get our best cab services   in Rudrapur, Haldwani, Nainital, Pantnagar, Haridwar, Dehradun and other cities
+                </p>
+                <a class="text-uppercase primary-btn" href="{{route('about')}}">Get Details</a>
             </div>
         </div>
-    </section>
-    <!-- End home-about Area -->
+    </div>
+</section>
+<!-- End home-about Area -->
 @section('content')
 @endsection
 
