@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1cf1417-d1a2-4df4-bf07-56cf210a6fea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -290,24 +289,6 @@
               <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
               <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -315,7 +296,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="composer&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/composer.json&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;env&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/.env&#10;re&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Auth/RegisterController.php&#10;sele&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/select.blade.php&#10;Roun&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/RoundTrip.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;regis&#9;null&#9;null&#10;Ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;paynow&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;Cli&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Client.php&#10;config/servi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config/services.php&#10;Ride B&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Notifications/RideBooked.php&#10;driver&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/driver.blade.php&#10;admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;Drive&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;Admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminRideController.php&#10;ti&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/includes/tinymce.blade.php&#10;fr&#9;null&#9;null&#10;Read&#9;null&#9;null&#10;read_bef&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_08_24_234910_create_read_befores_table.php&#10;tinym&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/includes/tinymce.blade.php&#10;AdminCon&#9;null&#9;null&#10;RideEnd&#9;null&#9;null&#10;Dr&#9;null&#9;null&#10;Driv&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;RideSt&#9;null&#9;null&#10;BidW&#9;null&#9;null&#10;notifi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Notifications&#10;AdminR&#9;null&#9;null&#10;BidA&#9;null&#9;null&#10;DriverR&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;NewB&#9;null&#9;null&#10;payn&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;config&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config&#10;RideCo&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;RideB&#9;null&#9;null&#10;queue&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config/queue.php&#10;app.php&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config/app.php&#10;config/bro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config/broadcasting.php&#10;config/app&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config/app.php&#10;.env&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/.env&#10;adm&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;we&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;driver/rides/show&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver/rides/show.blade.php&#10;Rid&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;fron&#9;null&#9;null&#10;AdminTr&#9;null&#9;null&#10;admin.bl&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;CLi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Client.php" />
+    <property name="SearchEverywhereHistoryKey" value=".git&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/storage/framework/.gitignore&#10;composer&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/composer.json&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;env&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/.env&#10;re&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Auth/RegisterController.php&#10;sele&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/select.blade.php&#10;Roun&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/RoundTrip.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;regis&#9;null&#9;null&#10;Ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;paynow&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;Cli&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Client.php&#10;config/servi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config/services.php&#10;Ride B&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Notifications/RideBooked.php&#10;driver&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/driver.blade.php&#10;admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;Drive&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;Admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminRideController.php&#10;ti&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/includes/tinymce.blade.php&#10;fr&#9;null&#9;null&#10;Read&#9;null&#9;null&#10;read_bef&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_08_24_234910_create_read_befores_table.php&#10;tinym&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/includes/tinymce.blade.php&#10;AdminCon&#9;null&#9;null&#10;RideEnd&#9;null&#9;null&#10;Dr&#9;null&#9;null&#10;Driv&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;RideSt&#9;null&#9;null&#10;BidW&#9;null&#9;null&#10;notifi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Notifications&#10;AdminR&#9;null&#9;null&#10;BidA&#9;null&#9;null&#10;DriverR&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;NewB&#9;null&#9;null&#10;payn&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;config&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config&#10;RideCo&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;RideB&#9;null&#9;null&#10;queue&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config/queue.php&#10;app.php&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config/app.php&#10;config/bro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config/broadcasting.php&#10;config/app&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config/app.php&#10;.env&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/.env&#10;adm&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;we&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;driver/rides/show&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver/rides/show.blade.php&#10;Rid&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;fron&#9;null&#9;null&#10;AdminTr&#9;null&#9;null&#10;admin.bl&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;MariaDB" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -385,12 +366,12 @@
       <workItem from="1566333255716" duration="4137000" />
       <workItem from="1566675904322" duration="5345000" />
       <workItem from="1566771649020" duration="10926000" />
-      <workItem from="1566828737948" duration="3995000" />
+      <workItem from="1566828737948" duration="4518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306986000" />
+    <option name="totallyTimeSpent" value="307509000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -434,13 +415,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/driver/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="19" column="87" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Driver/DriverController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -790,6 +764,9 @@
           <caret line="56" column="43" lean-forward="true" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/framework/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
