@@ -16,6 +16,7 @@ Route::get('about', 'FrontendController@about')->name("about");
 Route::get('services', 'FrontendController@services')->name("services");
 Route::get('gallery', 'FrontendController@gallery')->name("gallery");
 Route::get('contact', 'FrontendController@contact')->name("contact");
+Route::post('contact', 'FrontendController@contact_post')->name("contact_post");
 Route::get('select', 'RideController@select')->name("select");
 Route::post('paynow', 'RideController@paynow')->name("paynow");
 Route::post('redirect', 'RideController@redirectToPaymentGateway')->name("redirect");

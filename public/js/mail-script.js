@@ -10,7 +10,7 @@
             e.preventDefault(); // prevent default form submit
 
             $.ajax({
-                url: 'mail.php', // form action url
+                url: '/contact', // form action url
                 type: 'POST', // form submit method get/post
                 dataType: 'html', // request type html/json/xml
                 data: form.serialize(), // serialize form data
@@ -24,6 +24,9 @@
                     submit.attr("style", "display: none !important");; // reset submit button text
                 },
                 error: function(e) {
+                    alert.html("Something went wrong, please contact admin@mrcabie.com directly").fadeIn(); // fade in error message
+                    form.trigger('reset'); // reset form
+                    submit.attr("style", "display: none !important");; // reset submit button text
                     console.log(e)
                 }
             });
