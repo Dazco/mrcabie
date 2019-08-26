@@ -94,7 +94,7 @@
                                 <div class="form-group">
                                     <label for="pickup_date" class="text-center text-dark font-weight-bold m-0 p-0">Pickup Date</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="pickup_date" class="dates form-control"  placeholder="Pickup Date" type="date" name="pickup_date" required>
+                                        <input id="pickup_date" class="dates form-control"  placeholder="Pickup Date" type="date" name="pickup_date" required min="{{today()->format('Y-m-d')}}">
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
                                         </div>
@@ -103,7 +103,7 @@
                                 <div class="form-group">
                                     <label for="pickup_time" class="text-center text-dark font-weight-bold m-0 p-0">Pickup Time</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="pickup_time" class="dates form-control" type="time" name="pickup_time" required>
+                                        <input id="pickup_time" class="dates form-control" type="time" name="pickup_time" required min="04:00:00" max="23:00:00">
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-clock"></span></span>
                                         </div>
@@ -131,7 +131,7 @@
                                 <div class="form-group">
                                     <label for="pickup_date" class="text-center text-dark font-weight-bold m-0 p-0">Pickup Date</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="pickup_date" class="dates form-control"  placeholder="Pickup Date" type="date" name="pickup_date" required>
+                                        <input id="pickup_date" class="dates form-control"  placeholder="Pickup Date" type="date" name="pickup_date" required min="{{today()->format('Y-m-d')}}">
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
                                         </div>
@@ -140,7 +140,7 @@
                                 <div class="form-group">
                                     <label for="pickup_time" class="text-center text-dark font-weight-bold m-0 p-0">Pickup Time</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="pickup_time" class="dates form-control" type="time" name="pickup_time" required>
+                                        <input id="pickup_time" class="dates form-control" type="time" name="pickup_time" required min="04:00:00" max="23:00:00">
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-clock"></span></span>
                                         </div>
@@ -149,7 +149,7 @@
                                 <div class="form-group">
                                     <label for="return_date" class="text-center text-dark font-weight-bold m-0 p-0">Return Date</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="return_date" class="dates form-control" type="date" name="return_date" required>
+                                        <input id="return_date" class="dates form-control" type="date" name="return_date" required min="{{today()->format('Y-m-d')}}">
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
                                         </div>
@@ -158,7 +158,7 @@
                                 <div class="form-group">
                                     <label for="return_time" class="text-center text-dark font-weight-bold m-0 p-0">Return Time</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="return_time" class="dates form-control" type="time" name="return_time" required>
+                                        <input id="return_time" class="dates form-control" type="time" name="return_time" required min="04:00:00" max="23:00:00">
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-clock"></span></span>
                                         </div>
@@ -233,6 +233,10 @@
                 document.querySelector("#category_id").value = target.dataset.category_id;
                 document.querySelector("#paynow_form").submit();
             });
+        });
+
+        document.querySelector("#round_trip #pickup_date").addEventListener("change", (e)=>{
+            document.querySelector("#return_date").setAttribute("min", e.target.value);
         });
     </script>
 @endsection
