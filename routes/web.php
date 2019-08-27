@@ -11,6 +11,9 @@
 */
 
 /*Main Site Routes*/
+Route::get("/hello", function(){
+    return "hello";
+});
 Route::get('/', 'FrontendController@index')->name("home");
 Route::get('about', 'FrontendController@about')->name("about");
 Route::get('services', 'FrontendController@services')->name("services");
