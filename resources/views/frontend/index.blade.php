@@ -30,7 +30,8 @@
                     </p>
                 </div>
                 <div class="col-lg-4  col-md-6 header-right">
-                    <h3 id="form_header" class="pt-5 text-black text-uppercase">911-911-6955 911-911-8876</h3>
+                    <h3 id="form_header" class="pt-5 text-black text-uppercase"><a class="text-black" href="tel:911-911-6955">911-911-6955</a>, <br>
+                        <a class="text-black" href="tel:911-911-8876">911-911-8876</a></h3>
                     <h4 class="pt-15 pb-15 animated bounce slower">Book Your Cab Online!</h4>
                     @include("includes.session_flash")
                     @include("includes.form_error")
