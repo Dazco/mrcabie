@@ -44,7 +44,7 @@ class FrontendController extends Controller
         ]);
 
         Mail::raw($request->message, function ($message) use($request){
-            $message->subject($request->subject)->from($request->email)->to("admin@mrcabie.com");
+            $message->subject($request->subject)->from($request->email)->to("info@mrcabie.com");
         });
         return "Your Message has been sent successfully";
     }
