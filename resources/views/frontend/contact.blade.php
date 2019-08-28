@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <form class="form-area contact-form text-right" id="myForm" action="/contact" method="post">
+                    <form class="form-area contact-form text-right" action="/contact" method="post">
                         {{csrf_field()}}
                         <div class="row">
                             <div class="col-lg-6 form-group">
