@@ -266,7 +266,9 @@
                 if(date_picker.value === today){
                     let hours = date.getHours() + 1;
                     if(hours > 23) hours = hours - 24;
-                    const time = hours + ":" + date.getMinutes();
+                    let minutes = date.getMinutes();
+                    if (minutes < 10) minutes = '0'+minutes;
+                    const time = hours + ":" + minutes;
                     time_picker.setAttribute("min", time);
                 }else{
                     time_picker.setAttribute("min", "");
