@@ -103,7 +103,7 @@
                                 <div class="form-group">
                                     <label for="pickup_time" class="text-center text-dark font-weight-bold m-0 p-0">Pickup Time</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="pickup_time" class="dates form-control" type="time" name="pickup_time" required min="04:00:00" max="23:00:00">
+                                        <input id="pickup_time" class="dates form-control" type="time" name="pickup_time" required>
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-clock"></span></span>
                                         </div>
@@ -140,7 +140,7 @@
                                 <div class="form-group">
                                     <label for="pickup_time" class="text-center text-dark font-weight-bold m-0 p-0">Pickup Time</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="pickup_time" class="dates form-control" type="time" name="pickup_time" required min="04:00:00" max="23:00:00">
+                                        <input id="pickup_time" class="dates form-control" type="time" name="pickup_time" required>
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-clock"></span></span>
                                         </div>
@@ -158,7 +158,7 @@
                                 <div class="form-group">
                                     <label for="return_time" class="text-center text-dark font-weight-bold m-0 p-0">Return Time</label>
                                     <div class="input-group dates-wrap">
-                                        <input id="return_time" class="dates form-control" type="time" name="return_time" required min="04:00:00" max="23:00:00">
+                                        <input id="return_time" class="dates form-control" type="time" name="return_time" required>
                                         <div class="input-group-prepend">
                                             <span  class="input-group-text"><span class="lnr lnr-clock"></span></span>
                                         </div>
@@ -181,7 +181,7 @@
                     <p>Base Fare <span class="float-right mr-2">included</span></p>
                     <p>State, Toll Tax <span class="float-right mr-2">included</span></p>
                     <p>Vehicle and Fuel Charges <span class="float-right mr-2">included</span></p>
-                    <p>Included Kms <span class="float-right mr-2">{{2 * ceil($data["distance"])}} KM</span></p>
+                    <p>Included Kms <span class="float-right mr-2">{{$data['trip']==='round'?2 * ceil($data["distance"]):ceil($data["distance"])}} KM</span></p>
                     @if($prices)
                         <h3 class="font-weight-bold mb-2">Other Charges</h3>
                         <p>Waiting Charge <span class="float-right mr-2">&#8377; {{$prices[0]->category->waiting}}</span></p>
@@ -235,8 +235,42 @@
             });
         });
 
-        document.querySelector("#round_trip #pickup_date").addEventListener("change", (e)=>{
+        const set_min_time = (date_picker, time_picker)=>{
+            const date = new Date();
+            const year = date.getFullYear();
+            let month = date.getMonth() +1;
+            if (month < 10) month = '0'+month;
+            let day = date.getDate();
+            if (day < 10) day = '0'+day;
+            const today = year + '-'+month+'-'+day;
+            if(date_picker.value === today){
+                let hours = date.getHours() + 1;
+                if(hours > 23) hours = hours - 24;
+                const time = hours + ":" + date.getMinutes();
+                time_picker.setAttribute("min", time);
+            }else{
+                time_picker.setAttribute("min", "");
+            }
+        };
+
+        $("#round_trip #pickup_date").change((e)=>{
             document.querySelector("#return_date").setAttribute("min", e.target.value);
+            const time_picker = document.querySelector("#round_trip #pickup_time");
+            set_min_time(e.target, time_picker);
         });
+        $("#round_trip #return_date").change((e)=>{
+            const time_picker = document.querySelector("#round_trip #return_time");
+            set_min_time(e.target, time_picker);
+        });
+        $("#oneway_trip #pickup_date").change((e)=>{
+            const time_picker = document.querySelector("#oneway_trip #pickup_time");
+            set_min_time(e.target, time_picker);
+        });
+
+        // Time Picker Minimum setings
+        $("#round_trip #pickup_date").change();
+        $("#round_trip #return_date").change();
+        $("#oneway_trip #pickup_date").change();
+        //End of Time picker Minimum settings
     </script>
 @endsection

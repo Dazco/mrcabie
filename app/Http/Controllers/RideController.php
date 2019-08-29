@@ -11,6 +11,7 @@ use App\Ride;
 use App\RoundTrip;
 use App\Trip;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
@@ -38,6 +39,14 @@ class RideController extends Controller
             'return_date' => 'bail|required_if:trip,round|date|after:pickup_date',
             'return_time' => 'bail|required_if:trip,round|date_format:H:i'
         ]);
+        $start    = new Carbon();
+        $end  = new Carbon($request->pickup_date.' '.$request->pickup_time);
+
+        if($start->diffInHours($end) <6 ){
+            Session::flash("alert-danger", "To book a cab in less than 6 hours from now, please call us directly");
+            return redirect()->back();
+        }
+
         $trip = Trip::with("prices.category")->where("source", $request->pickup_city)->where("destination", $request->drop_city)->first();
         if($trip){
             $distance = distance($request->pickupLat, $request->pickupLon, $request->dropLat, $request->dropLon);
