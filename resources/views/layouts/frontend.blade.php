@@ -51,6 +51,7 @@
                     <li class="{{Request::is("/")?'menu-active':''}}"><a href="{{route("home")}}">Home</a></li>
                     <li class="{{Request::is("about")?'menu-active':''}}"><a href="{{route("about")}}">About</a></li>
                     <li class="{{Request::is("services")?'menu-active':''}}"><a href="{{route("services")}}">Services</a></li>
+                    <li class="{{Request::is("oneway_cabs")?'menu-active':''}}"><a href="{{route("oneway_cabs")}}">Oneway Cabs</a></li>
                     <li class="{{Request::is("gallery")?'menu-active':''}}"><a href="{{route("gallery")}}">Gallery</a></li>
                     <li class="{{Request::is("contact")?'menu-active':''}}"><a href="{{route("contact")}}">Contact</a></li>
                 </ul>

@@ -16,17 +16,17 @@
 
 @section('content')
     <!-- start banner Area -->
-    <section class="banner-area relative" id="home">
-        <div class="overlay overlay-bg"></div>
+    <section class="banner-area relative" id="home" style="background: url({{$banner?$banner->image:url('img/header-bg.jpg')}}) center;">
+        <div class="overlay overlay-bg" @if(!$banner || !$banner->is_clear)style="background-color: rgba(0, 0, 0, 0.8);"@endif></div>
         <div class="container">
             <div class="row fullscreen d-flex align-items-center justify-content-between">
                 <div class="banner-content col-lg-6 col-md-6 ">
-                    <h6 class="text-white ">Welcome to</h6>
+                    <h6 class="text-white ">{{$banner?$banner->small_heading:'Welcome to'}}</h6>
                     <h1 class="text-uppercase">
-                        Mr Cabie
+                        {{$banner?$banner->big_heading:'Mr Cabie'}}
                     </h1>
                     <p class="pt-10 pb-10 text-white">
-                        In just a few minutes, you can book your own taxi in the comforts of your home.
+                        {{$banner?$banner->paragraph:'In just a few minutes, you can book your own taxi in the comforts of your home.'}}
                     </p>
                 </div>
                 <div class="col-lg-4  col-md-6 header-right">

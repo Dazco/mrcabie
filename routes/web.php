@@ -14,6 +14,7 @@
 Route::get('/', 'FrontendController@index')->name("home");
 Route::get('about', 'FrontendController@about')->name("about");
 Route::get('services', 'FrontendController@services')->name("services");
+Route::get('oneway_cabs', 'FrontendController@oneway_cabs')->name("oneway_cabs");
 Route::get('gallery', 'FrontendController@gallery')->name("gallery");
 Route::get('contact', 'FrontendController@contact')->name("contact");
 Route::post('contact', 'FrontendController@contact_post')->name("contact_post");
@@ -47,8 +48,15 @@ Route::post('/register/driver', 'Auth\RegisterController@createDriver')->name('r
 
 Route::middleware("admin")->namespace("Admin")->prefix("admin")->name("admin.")->group(function(){
     Route::get("dashboard", "AdminController@dashboard")->name("dashboard");
+    Route::get("banner", "AdminController@banner_get")->name("banner_get");
+    Route::post("banner/{id}", "AdminController@banner_post")->name("banner_post");
     Route::get("read_before_you_book", "AdminController@read_before_you_book_get")->name('read_before_get');
     Route::post("read_before_you_book/{id}", "AdminController@read_before_you_book_post")->name('read_before_post');
+
+    /*Admin Slideshow Routes*/
+    Route::resource("slideshow", "AdminSlideshowController");
+    Route::post('slideshow/multiDestroy','AdminSlideshowController@multiDestroy');
+    /*End Admin Slideshow Routes*/
 
     /*Admin Media Routes*/
     Route::resource('media','AdminMediaController');

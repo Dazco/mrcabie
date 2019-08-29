@@ -90,10 +90,10 @@ class RegisterController extends Controller
             'phone' => ['required', 'string', 'unique:drivers'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
-        if(Str::startsWith($request->phone, "0")){
-            $request->phone = Str::replaceFirst("0", "+91", $request->phone);
+        if(Str::startsWith($request['phone'], "0")){
+            $request['phone'] = Str::replaceFirst("0", "+91", $request['phone']);
         }else{
-            $request->phone = Str::start($request->phone,"+91");
+            $request['phone'] = Str::start($request['phone'],"+91");
         }
         Driver::create([
             'name' => $request['name'],

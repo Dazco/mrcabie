@@ -59,6 +59,35 @@
 
         <!-- Nav Item - Uploads Collapse Menu -->
         <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#banner_collapse" aria-expanded="true" aria-controls="banner_collapse">
+                <i class="fa fa-fw fa-book-open"></i>
+                <span>Banner</span>
+            </a>
+            <div id="banner_collapse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Edit:</h6>
+                    <a class="collapse-item" href="{{route('admin.banner_get')}}"><i class="fa fa-fw fa-book-open"></i> Edit</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - Uploads Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#slideshow_collapse" aria-expanded="true" aria-controls="slideshow_collapse">
+                <i class="fa fa-fw fa-images"></i>
+                <span>Slideshow</span>
+            </a>
+            <div id="slideshow_collapse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Manage images for Slideshow:</h6>
+                    <a class="collapse-item" href="{{route('admin.slideshow.index')}}"><i class="fa fa-fw fa-book-open"></i> All Images</a>
+                    <a class="collapse-item" href="{{route('admin.slideshow.create')}}"><i class="fa fa-fw fa-upload"></i>Upload Image</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - Uploads Collapse Menu -->
+        <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#gallery_collapse" aria-expanded="true" aria-controls="gallery_collapse">
                 <i class="fa fa-fw fa-images"></i>
                 <span>Site Gallery</span>

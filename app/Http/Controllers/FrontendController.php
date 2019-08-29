@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Banner;
 use App\Media;
+use App\Slideshow;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -11,7 +13,8 @@ class FrontendController extends Controller
     //
     /*Homepage Section*/
     public function index(){
-        return view("frontend.index");
+        $banner = Banner::first();
+        return view("frontend.index", compact("banner"));
     }
 
     /*About Section*/
@@ -23,6 +26,12 @@ class FrontendController extends Controller
     /*Services Section*/
     public function services(){
         return view("frontend.services");
+    }
+
+    /*Oneway Cabs Section*/
+    public function oneway_cabs(){
+        $media = Slideshow::latest()->get();
+        return view("frontend.oneway_cabs", compact('media'));
     }
 
     /*Gallery Section*/
