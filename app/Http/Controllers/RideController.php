@@ -103,9 +103,9 @@ class RideController extends Controller
         ]);
 
         if(Str::startsWith($request->phone, "0")){
-            $request->phone = Str::replaceFirst("0", "+234", $request->phone);
+            $request->phone = Str::replaceFirst("0", "+91", $request->phone);
         }else{
-            $request->phone = Str::start($request->phone,"+234");
+            $request->phone = Str::start($request->phone,"+91");
         }
 
 

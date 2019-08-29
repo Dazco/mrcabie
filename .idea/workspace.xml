@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1cf1417-d1a2-4df4-bf07-56cf210a6fea" name="Default" comment="" />
+    <list default="true" id="c1cf1417-d1a2-4df4-bf07-56cf210a6fea" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RideController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RideController.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,11 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="banner.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="banner.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/banner.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="397">
               <caret line="38" column="93" lean-forward="true" selection-start-line="38" selection-start-column="93" selection-end-line="38" selection-end-column="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RideController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RideController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="107" column="61" selection-start-line="107" selection-start-column="61" selection-end-line="107" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -149,7 +160,6 @@
         <option value="$PROJECT_DIR$/app/Notifications/RideBooked.php" />
         <option value="$PROJECT_DIR$/app/Notifications/RideEnded.php" />
         <option value="$PROJECT_DIR$/app/Notifications/RideStarted.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/RideController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/composer.lock" />
         <option value="$PROJECT_DIR$/config/app.php" />
@@ -177,6 +187,7 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/banner.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/RideController.php" />
       </list>
     </option>
   </component>
@@ -383,7 +394,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="web&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;ba&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/banner.blade.php&#10;B&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Banner.php&#10;we&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;read&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/read_before_you_book.blade.php&#10;admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;Fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;create.blade&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/trips/create.blade.php&#10;create.b&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/media/create.blade.php&#10;slideshow/cr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/slideshow/create.blade.php&#10;Sli&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Slideshow.php&#10;Ba&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Banner.php&#10;AdminS&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminSlideshowController.php&#10;Adm&#9;null&#9;null&#10;Bann&#9;null&#9;null&#10;main.css&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/css/main.css&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;ind&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/slideshow/index.blade.php&#10;S&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminSlideshowController.php&#10;admi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;Fr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;create_sl&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_08_28_214547_create_slideshows_table.php&#10;create_me&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_204643_create_media_table.php&#10;Med&#9;null&#9;null&#10;about&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/about.blade.php&#10;fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;Fron&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;driver&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;reg&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Auth/RegisterController.php&#10;ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;mail-scri&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/mail-script.js&#10;mail&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/mail-script.js&#10;main&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/main.js&#10;con&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/contact.blade.php&#10;mail.js&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/mail-script.js&#10;env&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/.env&#10;contact&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/contact.blade.php&#10;regi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Auth/RegisterController.php&#10;selec&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/select.blade.php&#10;seeder&#9;null&#9;null&#10;App&#9;null&#9;null&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config/app.php&#10;kern&#9;null&#9;null&#10;pack&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/package.json&#10;composer&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/composer.lock&#10;compo&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/composer.json&#10;config&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config&#10;.git&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/storage/framework/.gitignore&#10;re&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Auth/RegisterController.php" />
+    <property name="SearchEverywhereHistoryKey" value="Ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;ba&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/banner.blade.php&#10;B&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Banner.php&#10;we&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;read&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/read_before_you_book.blade.php&#10;admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;Fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;create.blade&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/trips/create.blade.php&#10;create.b&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/media/create.blade.php&#10;slideshow/cr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/slideshow/create.blade.php&#10;Sli&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Slideshow.php&#10;Ba&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Banner.php&#10;AdminS&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminSlideshowController.php&#10;Adm&#9;null&#9;null&#10;Bann&#9;null&#9;null&#10;main.css&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/css/main.css&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;ind&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/slideshow/index.blade.php&#10;S&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminSlideshowController.php&#10;admi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;Fr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;create_sl&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_08_28_214547_create_slideshows_table.php&#10;create_me&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_204643_create_media_table.php&#10;Med&#9;null&#9;null&#10;about&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/about.blade.php&#10;fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;Fron&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;driver&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;reg&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Auth/RegisterController.php&#10;ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;mail-scri&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/mail-script.js&#10;mail&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/mail-script.js&#10;main&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/main.js&#10;con&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/contact.blade.php&#10;mail.js&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/mail-script.js&#10;env&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/.env&#10;contact&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/contact.blade.php&#10;regi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Auth/RegisterController.php&#10;selec&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/select.blade.php&#10;seeder&#9;null&#9;null&#10;App&#9;null&#9;null&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config/app.php&#10;kern&#9;null&#9;null&#10;pack&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/package.json&#10;composer&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/composer.lock&#10;compo&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/composer.json&#10;config&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config&#10;.git&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/storage/framework/.gitignore" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;MariaDB" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -455,12 +466,12 @@
       <workItem from="1566771649020" duration="10926000" />
       <workItem from="1566828737948" duration="26901000" />
       <workItem from="1566941278483" duration="5207000" />
-      <workItem from="1567003097317" duration="17863000" />
+      <workItem from="1567003097317" duration="18686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352962000" />
+    <option name="totallyTimeSpent" value="353785000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,6 +484,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32994923" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007657" side_tool="true" weight="0.9576988" />
@@ -480,7 +492,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3294893" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4992343" visible="true" weight="0.9571664" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4992343" weight="0.9571664" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.30635402" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3290469" />
@@ -694,13 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RideController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="144" column="24" selection-start-line="144" selection-start-column="24" selection-end-line="144" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/driver/rides/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -886,6 +891,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="38" column="93" lean-forward="true" selection-start-line="38" selection-start-column="93" selection-end-line="38" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RideController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="107" column="61" selection-start-line="107" selection-start-column="61" selection-end-line="107" selection-end-column="61" />
         </state>
       </provider>
     </entry>
