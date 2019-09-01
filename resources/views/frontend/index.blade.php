@@ -228,7 +228,7 @@
                     container: container,
                 }).configure({
                     countries: ['in'], // Search in India
-                    type: 'city', // Search only for cities names
+                    type: ['city','airport','trainStation'], // Search only for cities, aiports and train stations names
                     aroundLatLngViaIP: false // disable the extra search/boost around the source IP
                 }));
             }

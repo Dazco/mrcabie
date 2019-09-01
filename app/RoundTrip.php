@@ -20,14 +20,12 @@ class RoundTrip extends Model
     }
 
     public function getAmountAttribute(){
-        if($this->distance < $this->base_distance){
-            $amount = $this->distance * $this->extra_amount;
+        if($this->distance <= $this->base_distance){
+            $amount = ($this->distance * $this->extra_amount) + $this->base_amount;
         }elseif($this->distance > $this->base_distance){
-            $extra_distance = $this->distance - $this->base_distance;
-            $amount = $this->base_amount + ($extra_distance * $this->extra_amount);
-        }else{
-            $amount = $this->base_amount;
+            $amount = $this->extra_amount * $this->distance;
         }
+
         return ceil($amount);
     }
 

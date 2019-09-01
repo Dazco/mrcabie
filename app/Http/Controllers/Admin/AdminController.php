@@ -24,7 +24,7 @@ class AdminController extends Controller
         return view("admin/banner", compact("banner"));
     }
 
-    public function banner_post(Request $request, $id=null){
+    public function banner_post(Request $request, $id='null'){
         $update = false;
         $request->validate([
             'small_heading'=>'required',
@@ -36,7 +36,7 @@ class AdminController extends Controller
         $data = $request->all();
 
         $data['is_clear'] = (bool) $data['is_clear'];
-        if($id == null){
+        if($id == 'null'){
             $banner = Banner::create($data);
         }else{
             $banner = Banner::updateOrCreate(['id'=>$id],$data);

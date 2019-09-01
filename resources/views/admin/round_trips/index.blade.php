@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <input type="text" class="form-control" id="dist.category.{{$category->id}}" name="dist.category.{{$category->id}}"
-                               value="{{ $trip->base_distance }}" disabled>
+                               value="{{ $trip->base_distance }}" disabled required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -29,7 +29,7 @@
                                 &#8377;
                             </div>
                         </div>
-                        <input type="number" name="base.category.{{$category->id}}" id="base.category.{{$category->id}}" class="form-control" value="{{$trip->base_amount}}" disabled>
+                        <input type="number" name="base.category.{{$category->id}}" id="base.category.{{$category->id}}" class="form-control" value="{{$trip->base_amount}}" disabled required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -40,7 +40,7 @@
                                 &#8377;
                             </div>
                         </div>
-                        <input type="number" name="extra.category.{{$category->id}}" id="extra.category.{{$category->id}}" class="form-control" value="{{$trip->extra_amount}}" disabled>
+                        <input type="number" name="extra.category.{{$category->id}}" id="extra.category.{{$category->id}}" class="form-control" value="{{$trip->extra_amount}}" disabled required>
                     </div>
                 </div>
             @else
@@ -54,7 +54,7 @@
                             </div>
                         </div>
                         <input type="text" class="form-control" id="dist.category.{{$category->id}}" name="dist.category.{{$category->id}}"
-                               value="" disabled>
+                               value="" disabled required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -65,7 +65,7 @@
                                 &#8377;
                             </div>
                         </div>
-                        <input type="number" name="base.category.{{$category->id}}" id="base.category.{{$category->id}}" class="form-control" value="" disabled>
+                        <input type="number" name="base.category.{{$category->id}}" id="base.category.{{$category->id}}" class="form-control" value="" disabled required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -76,7 +76,7 @@
                                 &#8377;
                             </div>
                         </div>
-                        <input type="number" name="extra.category.{{$category->id}}" id="extra.category.{{$category->id}}" class="form-control" value="" disabled>
+                        <input type="number" name="extra.category.{{$category->id}}" id="extra.category.{{$category->id}}" class="form-control" value="" disabled required>
                     </div>
                 </div>
             @endif

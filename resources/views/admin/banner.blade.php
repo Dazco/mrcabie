@@ -11,7 +11,7 @@
         <div class="col-md-9">
             @include("includes.session_flash")
             @include("includes.form_error")
-            <form action="{{action('Admin\AdminController@banner_post', $banner?$banner->id:null)}}" method="post" enctype="multipart/form-data">
+            <form action="{{action('Admin\AdminController@banner_post', $banner?$banner->id:'null')}}" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
                 <div class="custom-file mb-3">
                     {!! Form::label('photo','Background Image:',['class'=>'custom-file-label']) !!}

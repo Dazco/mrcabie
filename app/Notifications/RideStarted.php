@@ -34,7 +34,8 @@ class RideStarted extends Notification implements ShouldQueue
     public function via($notifiable)
     {
         if(get_class($notifiable) == "App\Client"){
-            return ['mail', 'nexmo'];
+//            return ['mail', 'nexmo'];
+            return ['mail'];
         }else{
             return ['mail'];
         }
