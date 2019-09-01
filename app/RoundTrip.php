@@ -16,7 +16,7 @@ class RoundTrip extends Model
     }
     
     public function setDistance($dist){
-        $this->distance = 2 * $dist;
+        $this->distance = ceil(2 * $dist);
     }
 
     public function getAmountAttribute(){
