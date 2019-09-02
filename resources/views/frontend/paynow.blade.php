@@ -54,7 +54,7 @@
                     <h3 class="font-weight-bold mt-3 mb-3">Fare Details</h3>
                     <p>Base Fare <span class="float-right mr-2">included</span></p>
                     <p>State, Toll Tax <span class="float-right mr-2">included</span></p>
-                    <p>Included Kms <span class="float-right mr-2">{{$trip->prices[0]->distance}} KM</span></p>
+                    <p>Included Kms <span class="float-right mr-2">{{$data['trip']=='oneway'?ceil((float)explode(" ", $trip->distance)[0]):$trip->prices[0]->distance}} KM</span></p>
                     <p>Vehicle and Fuel Charges <span class="float-right mr-2">included</span></p>
                     <h3 class="font-weight-bold mb-2">Other Charges</h3>
                     <p>Waiting Charge <span class="float-right mr-2">&#8377; {{$trip->prices[0]->category->waiting}}/min</span></p>
