@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1cf1417-d1a2-4df4-bf07-56cf210a6fea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/RoundTrip.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RoundTrip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RideController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RideController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Trip.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Trip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/AdminFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AdminFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_08_225235_create_trips_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_08_225235_create_trips_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/trips/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/trips/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/paynow.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/paynow.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,58 +52,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="select.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/frontend/select.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="209" column="55" selection-start-line="209" selection-start-column="55" selection-end-line="209" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/trips/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="59" column="11" lean-forward="true" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/trips/show.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="85" column="59" selection-start-line="85" selection-start-column="59" selection-end-line="85" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoundTrip.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RoundTrip.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/RoundTrip.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="235">
+              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RideStarted.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Notifications/RideStarted.php">
+      <file leaf-file-name="2019_07_08_225235_create_trips_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_08_225235_create_trips_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+            <state relative-caret-position="306">
+              <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <file leaf-file-name="Trip.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Trip.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="52" column="108" lean-forward="true" selection-start-line="52" selection-start-column="108" selection-end-line="52" selection-end-column="108" />
+            <state relative-caret-position="162">
+              <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paynow.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/frontend/paynow.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="56" column="95" selection-start-line="56" selection-start-column="95" selection-end-line="56" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RideController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RideController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="94" column="53" selection-start-line="94" selection-start-column="53" selection-end-line="94" selection-end-column="53" />
+              <folding>
+                <element signature="e#40#54#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/trips/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="39" column="76" selection-start-line="39" selection-start-column="76" selection-end-line="39" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseSeeder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
@@ -120,7 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>danger</find>
       <find>&amp;</find>
       <find>das</find>
       <find>valer</find>
@@ -131,7 +144,6 @@
       <find>number</find>
       <find>not</find>
       <find>sea</find>
-      <find>distance</find>
       <find>Texi</find>
       <find>abbie</find>
       <find>push</find>
@@ -150,6 +162,8 @@
       <find>kms</find>
       <find>type</find>
       <find>err</find>
+      <find>distance</find>
+      <find>prices</find>
     </findStrings>
     <replaceStrings>
       <replace>abie</replace>
@@ -161,11 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/admin/read_before_you_book.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/includes/tinymce.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/rides/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/rides/show.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/driver/rides/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/driver/rides/history.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Driver/DriverRideController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminRideController.php" />
@@ -173,7 +182,6 @@
         <option value="$PROJECT_DIR$/resources/views/admin/drivers/history.blade.php" />
         <option value="$PROJECT_DIR$/config/services.php" />
         <option value="$PROJECT_DIR$/app/Client.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/paynow.blade.php" />
         <option value="$PROJECT_DIR$/app/Notifications/BidApproved.php" />
         <option value="$PROJECT_DIR$/app/Notifications/BidWithdrawn.php" />
         <option value="$PROJECT_DIR$/app/Notifications/NewBid.php" />
@@ -200,7 +208,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/RideController.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/oneway_cabs.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/select.blade.php" />
@@ -212,6 +219,13 @@
         <option value="$PROJECT_DIR$/resources/views/admin/banner.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/round_trips/index.blade.php" />
         <option value="$PROJECT_DIR$/app/RoundTrip.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_08_225235_create_trips_table.php" />
+        <option value="$PROJECT_DIR$/app/Trip.php" />
+        <option value="$PROJECT_DIR$/database/factories/AdminFactory.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/trips/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/RideController.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/paynow.blade.php" />
       </list>
     </option>
   </component>
@@ -362,8 +376,19 @@
             <path>
               <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
               <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Notifications" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="factories" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="seeds" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
@@ -414,7 +439,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="AdminR&#9;null&#9;null&#10;ba&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/banner.blade.php&#10;Adm&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminController.php&#10;RideCon&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;Ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Notifications/RideBooked.php&#10;read&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/read_before_you_book.blade.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;banner&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/banner.blade.php&#10;Round&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/RoundTrip.php&#10;one&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/oneway_cabs.blade.php&#10;selec&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/select.blade.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;exce&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Exceptions&#10;B&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Banner.php&#10;we&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;Fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;create.blade&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/trips/create.blade.php&#10;create.b&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/media/create.blade.php&#10;slideshow/cr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/slideshow/create.blade.php&#10;Sli&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Slideshow.php&#10;Ba&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Banner.php&#10;AdminS&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminSlideshowController.php&#10;Bann&#9;null&#9;null&#10;main.css&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/css/main.css&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;ind&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/slideshow/index.blade.php&#10;S&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminSlideshowController.php&#10;admi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;Fr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;create_sl&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_08_28_214547_create_slideshows_table.php&#10;create_me&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_204643_create_media_table.php&#10;Med&#9;null&#9;null&#10;about&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/about.blade.php&#10;fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;Fron&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;driver&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;reg&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Auth/RegisterController.php&#10;ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;mail-scri&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/mail-script.js&#10;mail&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/mail-script.js&#10;main&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/main.js&#10;con&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/contact.blade.php&#10;mail.js&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/mail-script.js&#10;env&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/.env&#10;contact&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/contact.blade.php&#10;regi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Auth/RegisterController.php&#10;seeder&#9;null&#9;null&#10;App&#9;null&#9;null&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/config/app.php" />
+    <property name="SearchEverywhereHistoryKey" value="Ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;payn&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;trips/index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/trips/index.blade.php&#10;AdminSee&#9;null&#9;null&#10;AdminT&#9;null&#9;null&#10;Trip&#9;null&#9;null&#10;create_trip&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_225235_create_trips_table.php&#10;AdminR&#9;null&#9;null&#10;ba&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/banner.blade.php&#10;Adm&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminController.php&#10;RideCon&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;read&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/read_before_you_book.blade.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;banner&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/banner.blade.php&#10;Round&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/RoundTrip.php&#10;one&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/oneway_cabs.blade.php&#10;selec&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/select.blade.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;exce&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Exceptions&#10;B&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Banner.php&#10;we&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;Fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;create.blade&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/trips/create.blade.php&#10;create.b&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/media/create.blade.php&#10;slideshow/cr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/slideshow/create.blade.php&#10;Sli&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Slideshow.php&#10;Ba&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Banner.php&#10;AdminS&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminSlideshowController.php&#10;Bann&#9;null&#9;null&#10;main.css&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/css/main.css&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;ind&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/slideshow/index.blade.php&#10;S&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminSlideshowController.php&#10;admi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;Fr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;create_sl&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_08_28_214547_create_slideshows_table.php&#10;create_me&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_204643_create_media_table.php&#10;Med&#9;null&#9;null&#10;about&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/about.blade.php&#10;fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;Fron&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;driver&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;reg&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Auth/RegisterController.php&#10;ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;mail-scri&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/mail-script.js&#10;mail&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/mail-script.js&#10;main&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/main.js&#10;con&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/contact.blade.php&#10;mail.js&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/js/mail-script.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;MariaDB" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -488,12 +513,12 @@
       <workItem from="1566941278483" duration="5207000" />
       <workItem from="1567003097317" duration="19626000" />
       <workItem from="1567077546341" duration="7300000" />
-      <workItem from="1567343464776" duration="3804000" />
+      <workItem from="1567343464776" duration="9519000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="365829000" />
+    <option name="totallyTimeSpent" value="371544000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,76 +586,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/AdminsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="150" column="6" lean-forward="true" selection-start-line="150" selection-start-column="6" selection-end-line="150" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="76" column="42" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="2086" column="10" selection-start-line="2086" selection-start-column="10" selection-end-line="2086" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/frontend/contact.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -864,16 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RideController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/read_before_you_book.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -919,10 +864,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_08_225235_create_trips_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/RoundTrip.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="235">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="479" column="17" lean-forward="true" selection-start-line="479" selection-start-column="17" selection-end-line="479" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/AdminsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://be742312-b49b-471e-97da-64388cbb138f/schema/mrcabie/table/admins">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/AdminFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding>
+            <element signature="e#66#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/trips/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="39" column="76" selection-start-line="39" selection-start-column="76" selection-end-line="39" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="118" column="61" selection-start-line="118" selection-start-column="61" selection-end-line="118" selection-end-column="61" />
+          <folding>
+            <element signature="e#46#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Trip.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RideController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="94" column="53" selection-start-line="94" selection-start-column="53" selection-end-line="94" selection-end-column="53" />
+          <folding>
+            <element signature="e#40#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/paynow.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="56" column="95" selection-start-line="56" selection-start-column="95" selection-end-line="56" selection-end-column="95" />
         </state>
       </provider>
     </entry>

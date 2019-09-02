@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Trip;
 use App\TripCategory;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Session;
 
 class AdminTripController extends Controller
@@ -48,9 +48,15 @@ class AdminTripController extends Controller
             'source' => 'required',
             'destination' => 'required',
         ]);
+
+        $client = new Client();
+        $url = "https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=$request->source&destinations=$request->destination,NY&key=%20AIzaSyCMns658UsZI_KexlDQEEvhtJE7pc7sedU";
+        $response = json_decode($client->get($url)->getBody());
         $data = [
             'source' => $request->source,
             'destination' => $request->destination,
+            'distance' => $response->rows[0]->elements[0]->distance->text,
+            'duration' => $response->rows[0]->elements[0]->duration->text,
         ];
         $categories = TripCategory::all();
         if($trip = Trip::firstOrCreate($data)){
@@ -108,9 +114,14 @@ class AdminTripController extends Controller
             'source' => 'required',
             'destination' => 'required',
         ]);
+        $client = new Client();
+        $url = "https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=$request->source&destinations=$request->destination,NY&key=%20AIzaSyCMns658UsZI_KexlDQEEvhtJE7pc7sedU";
+        $response = json_decode($client->get($url)->getBody());
         $data = [
             'source' => $request->source,
             'destination' => $request->destination,
+            'distance' => $response->rows[0]->elements[0]->distance->text,
+            'duration' => $response->rows[0]->elements[0]->duration->text,
         ];
         $categories = TripCategory::all();
         if($trip = tap(Trip::findOrFail($id))->update($data)){

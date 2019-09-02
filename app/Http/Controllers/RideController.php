@@ -49,7 +49,7 @@ class RideController extends Controller
 
         $trip = Trip::with("prices.category")->where("source", $request->pickup_city)->where("destination", $request->drop_city)->first();
         if($trip){
-            $distance = distance($request->pickupLat, $request->pickupLon, $request->dropLat, $request->dropLon);
+            $distance = (float)explode(" ", $trip->distance)[0];
             if($request->trip === "oneway"){
                 $prices = $trip->prices;
             }elseif ($request->trip === "round"){
@@ -89,7 +89,7 @@ class RideController extends Controller
             // do nothing for now
         }elseif ($request->trip === "round"){
             $price = RoundTrip::with("category")->where("trip_category_id", $request->category_id)->firstOrFail();
-            $price->setDistance($request->distance);
+            $price->setDistance((float)explode(" ", $trip->distance)[0]);
             $trip = (object) [
                 'source' => $request->pickup_city,
                 'destination' => $request->drop_city,
@@ -127,7 +127,7 @@ class RideController extends Controller
             // do nothing for now
         }elseif ($request->trip === "round"){
             $price = RoundTrip::with("category")->where("trip_category_id", $request->category_id)->firstOrFail();
-            $price->setDistance($request->distance);
+            $price->setDistance((float)explode(" ", $trip->distance)[0]);
             $amount = $price->amount;
         }
 

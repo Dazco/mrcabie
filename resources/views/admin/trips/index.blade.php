@@ -22,6 +22,8 @@
                                 <th>S/N</th>
                                 <th><i class="fas fa-location-arrow"></i> Source</th>
                                 <th><i class="fas fa-location-arrow"></i> Destination</th>
+                                <th><i class="fas fa-location-arrow"></i> Distance</th>
+                                <th><i class="fas fa-clock"></i> Duration</th>
                                 <th><i class="fas fa-calendar"></i> Created At</th>
                                 <th><i class="fas fa-calendar"></i> Updated At</th>
                                 <th></th>
@@ -34,6 +36,8 @@
                                         <td>{{$i}}</td>
                                         <td>{{ucfirst($trips[$i-1]->source)}}</td>
                                         <td>{{ucfirst($trips[$i-1]->destination)}}</td>
+                                        <td>{{ucfirst($trips[$i-1]->distance)}}</td>
+                                        <td>{{ucfirst($trips[$i-1]->duration)}}</td>
                                         <td>{{$trips[$i-1]->created_at->diffForHumans()}}</td>
                                         <td>{{$trips[$i-1]->updated_at->diffForhumans()}}</td>
                                         <td><a href="{{route("admin.trips.show", $trips[$i-1]->id)}}">Details</a></td>

@@ -17,6 +17,8 @@ class CreateTripsTable extends Migration
             $table->bigIncrements('id');
             $table->string("source");
             $table->string("destination");
+            $table->string("distance");
+            $table->string("duration");
             $table->timestamps();
         });
     }
