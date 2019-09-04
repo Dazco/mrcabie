@@ -54,8 +54,11 @@ class RideController extends Controller
                 $prices = $trip->prices;
             }elseif ($request->trip === "round"){
                 $prices = RoundTrip::with("category")->get();
+                $start  = new Carbon($request->pickup_date);
+                $end  = new Carbon($request->return_date);
                 foreach ($prices as $price){
                     $price->setDistance($distance);
+                    $price->days = $start->diffInDays($end) + 1;
                 }
             }
         }else{
@@ -89,7 +92,10 @@ class RideController extends Controller
             // do nothing for now
         }elseif ($request->trip === "round"){
             $price = RoundTrip::with("category")->where("trip_category_id", $request->category_id)->firstOrFail();
+            $start  = new Carbon($request->pickup_date);
+            $end  = new Carbon($request->return_date);
             $price->setDistance((float)explode(" ", $trip->distance)[0]);
+            $price->days = $start->diffInDays($end) + 1;
             $trip = (object) [
                 'source' => $request->pickup_city,
                 'destination' => $request->drop_city,
@@ -127,7 +133,10 @@ class RideController extends Controller
             // do nothing for now
         }elseif ($request->trip === "round"){
             $price = RoundTrip::with("category")->where("trip_category_id", $request->category_id)->firstOrFail();
+            $start  = new Carbon($request->pickup_date);
+            $end  = new Carbon($request->return_date);
             $price->setDistance((float)explode(" ", $trip->distance)[0]);
+            $price->days = $start->diffInDays($end) + 1;
             $amount = $price->amount;
         }
 
