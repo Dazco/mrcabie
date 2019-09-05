@@ -52,7 +52,6 @@ class AdminTripController extends Controller
         $client = new Client();
         $url = "https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=$request->source&destinations=$request->destination&key=%20AIzaSyCMns658UsZI_KexlDQEEvhtJE7pc7sedU";
         $response = json_decode($client->get($url)->getBody());
-        dd($response);
         $data = [
             'source' => $request->source,
             'destination' => $request->destination,

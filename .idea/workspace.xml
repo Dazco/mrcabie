@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1cf1417-d1a2-4df4-bf07-56cf210a6fea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,8 +67,8 @@
       <file leaf-file-name="AdminTripController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="52" column="194" lean-forward="true" selection-start-line="52" selection-start-column="194" selection-end-line="52" selection-end-column="194" />
+            <state relative-caret-position="252">
+              <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -467,12 +466,12 @@
       <workItem from="1567343464776" duration="11651000" />
       <workItem from="1567514958450" duration="1336000" />
       <workItem from="1567600354087" duration="3372000" />
-      <workItem from="1567696296758" duration="419000" />
+      <workItem from="1567696296758" duration="485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="378803000" />
+    <option name="totallyTimeSpent" value="378869000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -890,8 +889,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="52" column="194" lean-forward="true" selection-start-line="52" selection-start-column="194" selection-end-line="52" selection-end-column="194" />
+        <state relative-caret-position="252">
+          <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
         </state>
       </provider>
     </entry>
