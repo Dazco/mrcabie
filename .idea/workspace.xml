@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1cf1417-d1a2-4df4-bf07-56cf210a6fea" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RideController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RideController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/RoundTrip.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RoundTrip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,17 +50,26 @@
       <file leaf-file-name="RoundTrip.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/RoundTrip.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
+            <state relative-caret-position="432">
               <caret line="24" column="107" selection-start-line="24" selection-start-column="107" selection-end-line="24" selection-end-column="107" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RideController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RideController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RideController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="142" column="56" lean-forward="true" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
+            <state relative-caret-position="342">
+              <caret line="161" column="70" lean-forward="true" selection-start-line="161" selection-start-column="70" selection-end-line="161" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminTripController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="52" column="194" lean-forward="true" selection-start-line="52" selection-start-column="194" selection-end-line="52" selection-end-column="194" />
             </state>
           </provider>
         </entry>
@@ -165,10 +173,10 @@
         <option value="$PROJECT_DIR$/app/Trip.php" />
         <option value="$PROJECT_DIR$/database/factories/AdminFactory.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/trips/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/paynow.blade.php" />
         <option value="$PROJECT_DIR$/app/RoundTrip.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RideController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php" />
       </list>
     </option>
   </component>
@@ -382,7 +390,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="RideC&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;Ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;pay&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;create_ad&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_161103_create_admins_table.php&#10;Admin&#9;null&#9;null&#10;ignore&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/.gitignore&#10;payn&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;trips/index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/trips/index.blade.php&#10;AdminSee&#9;null&#9;null&#10;AdminT&#9;null&#9;null&#10;Trip&#9;null&#9;null&#10;create_trip&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_225235_create_trips_table.php&#10;AdminR&#9;null&#9;null&#10;ba&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/banner.blade.php&#10;Adm&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminController.php&#10;RideCon&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;read&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/read_before_you_book.blade.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;banner&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/banner.blade.php&#10;Round&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/RoundTrip.php&#10;one&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/oneway_cabs.blade.php&#10;selec&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/select.blade.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;exce&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Exceptions&#10;B&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Banner.php&#10;we&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;Fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;create.blade&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/trips/create.blade.php&#10;create.b&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/media/create.blade.php&#10;slideshow/cr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/slideshow/create.blade.php&#10;Sli&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Slideshow.php&#10;Ba&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Banner.php&#10;AdminS&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminSlideshowController.php&#10;Bann&#9;null&#9;null&#10;main.css&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/css/main.css&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;ind&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/slideshow/index.blade.php&#10;S&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminSlideshowController.php&#10;admi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;Fr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;create_sl&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_08_28_214547_create_slideshows_table.php&#10;create_me&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_204643_create_media_table.php&#10;Med&#9;null&#9;null&#10;about&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/about.blade.php&#10;fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;Fron&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;driver&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;reg&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Auth/RegisterController.php&#10;ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php" />
+    <property name="SearchEverywhereHistoryKey" value="Admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminTripController.php&#10;RideC&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;Ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;pay&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;create_ad&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_161103_create_admins_table.php&#10;ignore&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/.gitignore&#10;payn&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;trips/index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/trips/index.blade.php&#10;AdminSee&#9;null&#9;null&#10;AdminT&#9;null&#9;null&#10;Trip&#9;null&#9;null&#10;create_trip&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_225235_create_trips_table.php&#10;AdminR&#9;null&#9;null&#10;ba&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/banner.blade.php&#10;Adm&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminController.php&#10;RideCon&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;read&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/read_before_you_book.blade.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;banner&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/banner.blade.php&#10;Round&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/RoundTrip.php&#10;one&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/oneway_cabs.blade.php&#10;selec&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/select.blade.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;exce&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Exceptions&#10;B&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Banner.php&#10;we&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;Fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;create.blade&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/trips/create.blade.php&#10;create.b&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/media/create.blade.php&#10;slideshow/cr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/slideshow/create.blade.php&#10;Sli&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Slideshow.php&#10;Ba&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Banner.php&#10;AdminS&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminSlideshowController.php&#10;Bann&#9;null&#9;null&#10;main.css&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/css/main.css&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;ind&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/slideshow/index.blade.php&#10;S&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminSlideshowController.php&#10;admi&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;Fr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;create_sl&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_08_28_214547_create_slideshows_table.php&#10;create_me&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_204643_create_media_table.php&#10;Med&#9;null&#9;null&#10;about&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/about.blade.php&#10;fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;Fron&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/FrontendController.php&#10;driver&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;reg&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Auth/RegisterController.php&#10;ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;MariaDB" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -458,12 +466,13 @@
       <workItem from="1567077546341" duration="7300000" />
       <workItem from="1567343464776" duration="11651000" />
       <workItem from="1567514958450" duration="1336000" />
-      <workItem from="1567600354087" duration="2652000" />
+      <workItem from="1567600354087" duration="3372000" />
+      <workItem from="1567696296758" duration="419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="377664000" />
+    <option name="totallyTimeSpent" value="378803000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -504,23 +513,23 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.30635402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32994923" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3294893" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" visible="true" weight="0.3290469" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4992343" weight="0.9571664" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007657" side_tool="true" weight="0.9576988" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3294893" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.3509061" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -823,13 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="118" column="61" selection-start-line="118" selection-start-column="61" selection-end-line="118" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/factories/AdminFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -874,15 +876,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/RoundTrip.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
+        <state relative-caret-position="432">
           <caret line="24" column="107" selection-start-line="24" selection-start-column="107" selection-end-line="24" selection-end-column="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RideController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="142" column="56" lean-forward="true" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
+        <state relative-caret-position="342">
+          <caret line="161" column="70" lean-forward="true" selection-start-line="161" selection-start-column="70" selection-end-line="161" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTripController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="52" column="194" lean-forward="true" selection-start-line="52" selection-start-column="194" selection-end-line="52" selection-end-column="194" />
         </state>
       </provider>
     </entry>
