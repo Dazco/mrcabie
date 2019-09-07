@@ -68,6 +68,7 @@ class RideController extends Controller
 
         $data = $request->all();
         $data["distance"] = $distance;
+        dd($prices);
         return view("frontend.select", compact("data", "prices"));
     }
 
