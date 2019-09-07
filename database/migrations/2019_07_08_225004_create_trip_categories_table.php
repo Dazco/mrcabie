@@ -22,6 +22,8 @@ class CreateTripCategoriesTable extends Migration
             $table->integer("waiting");
             $table->integer("extra_dist");
             $table->timestamps();
+
+            $table->engine = 'InnoDB';
         });
     }
 

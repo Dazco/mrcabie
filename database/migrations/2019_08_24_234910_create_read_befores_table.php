@@ -17,6 +17,8 @@ class CreateReadBeforesTable extends Migration
             $table->bigIncrements('id');
             $table->text("content");
             $table->timestamps();
+
+            $table->engine = 'InnoDB';
         });
     }
 

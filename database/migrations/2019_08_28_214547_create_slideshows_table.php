@@ -16,6 +16,8 @@ class CreateSlideshowsTable extends Migration
         Schema::create('slideshows', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+
+            $table->engine = 'InnoDB';
         });
     }
 

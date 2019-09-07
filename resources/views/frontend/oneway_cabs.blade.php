@@ -11,6 +11,25 @@
 @endsection
 
 @section('styles')
+    <style>
+        .booking_form input{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white !important;
+            opacity: 1 !important; /* Firefox */
+        }
+
+        .booking_form input::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white !important;
+            opacity: 1 !important; /* Firefox */
+        }
+
+        .booking_form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: white;
+        }
+
+        .booking_form input::-ms-input-placeholder { /* Microsoft Edge */
+            color: white;
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -78,7 +97,7 @@
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div class="tab-pane active" id="oneway_trip" role="tabpanel">
-                            <form class="form" method="GET" action="{{route("select")}}">
+                            <form class="form booking_form" method="GET" action="{{route("select")}}">
                                 <input type="hidden" name="trip" value="oneway">
                                 <div class="form-group">
                                     <input type="text" name="pickup_city" class="form-control autocomplete" autocomplete="off" placeholder="From" required>
@@ -115,7 +134,7 @@
                             </form>
                         </div>
                         <div class="tab-pane" id="round_trip" role="tabpanel">
-                            <form class="form" method="GET" action="{{route("select")}}">
+                            <form class="form booking_form" method="GET" action="{{route("select")}}">
                                 <input type="hidden" name="trip" value="round">
                                 <div class="form-group">
                                     <input type="text" name="pickup_city" class="form-control autocomplete" autocomplete="off" placeholder="From" required>

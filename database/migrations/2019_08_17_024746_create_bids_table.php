@@ -21,6 +21,8 @@ class CreateBidsTable extends Migration
             $table->foreign("driver_id")->references("id")->on("drivers")->onDelete("cascade");
             $table->foreign("ride_id")->references("id")->on("rides")->onDelete("cascade");
             $table->timestamps();
+
+            $table->engine = 'InnoDB';
         });
     }
 

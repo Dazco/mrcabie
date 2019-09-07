@@ -25,6 +25,8 @@ class CreateRoundTripsTable extends Migration
                 ->on("trip_categories")
                 ->onDelete("cascade");
             $table->timestamps();
+
+            $table->engine = 'InnoDB';
         });
     }
 

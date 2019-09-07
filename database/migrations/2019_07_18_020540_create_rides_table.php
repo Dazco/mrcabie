@@ -34,6 +34,8 @@ class CreateRidesTable extends Migration
             $table->text("requests")->nullable();
             $table->bigInteger("client_id")->unsigned();
             $table->timestamps();
+
+            $table->engine = 'InnoDB';
         });
     }
 

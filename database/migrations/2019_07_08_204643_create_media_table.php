@@ -17,6 +17,8 @@ class CreateMediaTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->timestamps();
+
+            $table->engine = 'InnoDB';
         });
     }
 

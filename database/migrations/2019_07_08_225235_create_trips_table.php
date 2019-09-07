@@ -20,6 +20,8 @@ class CreateTripsTable extends Migration
             $table->string("distance");
             $table->string("duration");
             $table->timestamps();
+
+            $table->engine = 'InnoDB';
         });
     }
 

@@ -11,13 +11,32 @@
 @endsection
 
 @section('styles')
+    <style>
+        .booking_form input{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white !important;
+            opacity: 1 !important; /* Firefox */
+        }
+
+        .booking_form input::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white !important;
+            opacity: 1 !important; /* Firefox */
+        }
+
+        .booking_form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: white;
+        }
+
+        .booking_form input::-ms-input-placeholder { /* Microsoft Edge */
+            color: white;
+        }
+    </style>
 @endsection
 
 @section('content')
     <div class="container">
         <div class="row  mt-60 mb-30">
             <div class="col-md-7 mr-md-5" style="margin-top: 110px;">
-                @if($prices)
+                @if(count($prices) > 0)
                     <form class="form" method="POST" action="{{route("paynow")}}" id="paynow_form">
                         <input type="hidden" name="trip" value="{{$data['trip']}}">
                         <input type="hidden" name="pickup_city" value="{{$data['pickup_city']}}">
@@ -83,7 +102,7 @@
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div class="tab-pane active" id="oneway_trip" role="tabpanel">
-                            <form class="form" method="GET" action="{{route("select")}}">
+                            <form class="form booking_form" method="GET" action="{{route("select")}}">
                                 <input type="hidden" name="trip" value="oneway">
                                 <div class="form-group">
                                     <input type="text" name="pickup_city" class="form-control autocomplete" autocomplete="off" placeholder="From" required>
@@ -120,7 +139,7 @@
                             </form>
                         </div>
                         <div class="tab-pane" id="round_trip" role="tabpanel">
-                            <form class="form" method="GET" action="{{route("select")}}">
+                            <form class="form booking_form" method="GET" action="{{route("select")}}">
                                 <input type="hidden" name="trip" value="round">
                                 <div class="form-group">
                                     <input type="text" name="pickup_city" class="form-control autocomplete" autocomplete="off" placeholder="From" required>
@@ -182,7 +201,7 @@
                     <p>State, Toll Tax <span class="float-right mr-2">included</span></p>
                     <p>Vehicle and Fuel Charges <span class="float-right mr-2">included</span></p>
                     <p>Included Kms <span class="float-right mr-2">{{$data['trip']==='round'?2 * ceil($data["distance"]):ceil($data["distance"])}} KM</span></p>
-                    @if($prices)
+                    @if(count($prices))
                         <h3 class="font-weight-bold mb-2">Other Charges</h3>
                         <p>Waiting Charge <span class="float-right mr-2">&#8377; {{$prices[0]->category->waiting}}</span></p>
                         <h3 class="font-weight-bold mb-2">Extra KMs Charges</h3>

@@ -20,6 +20,8 @@ class CreateBannersTable extends Migration
             $table->string("paragraph");
             $table->boolean('is_clear')->default(false);
             $table->timestamps();
+
+            $table->engine = 'InnoDB';
         });
     }
 

@@ -19,6 +19,8 @@ class CreatePhotosTable extends Migration
             $table->integer('photoable_id');
             $table->string('photoable_type');
             $table->timestamps();
+
+            $table->engine = 'InnoDB';
         });
     }
 

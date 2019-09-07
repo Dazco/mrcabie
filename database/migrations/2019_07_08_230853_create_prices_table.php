@@ -31,6 +31,8 @@ class CreatePricesTable extends Migration
                 ->onDelete("cascade");
 
             $table->timestamps();
+
+            $table->engine = 'InnoDB';
         });
     }
 
