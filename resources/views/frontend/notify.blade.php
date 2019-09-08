@@ -79,8 +79,8 @@
             </div>
 
         @else
-            <h2 class="mb-3">OOPs!</h2>
-            <p>{{$message}}</p>
+            <h1 class="mb-3">OOPs!</h1>
+            <h4 class="lead">{{$message}}</h4>
         @endif
     </div>
 @endsection
