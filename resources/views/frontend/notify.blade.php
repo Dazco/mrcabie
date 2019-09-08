@@ -10,7 +10,7 @@
             <h1 class="mb-3">Payment Successful</h1>
             <h4 class="lead">Your Ride has been successfully booked and a confirmation has been sent to your email.</h4>
 
-            <div class="row text-center">
+            <div class="row text-center justify-content-center">
                 <div class="card mt-20 col-sm-8">
                     <h3 class="card-header">{{strtoupper($ride->ride_type)}} RIDE <span
                                 class="text-danger">({{strtoupper($ride->category->name)}})</span></h3>
