@@ -12,6 +12,7 @@
                 <div class="reg-form">
                     <div class="card">
                         <h3 class="card-header">{{$page}} Rides</h3>
+                        @include("includes.session_flash")
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             @if(count($rides)>0)

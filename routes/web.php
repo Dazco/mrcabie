@@ -83,6 +83,10 @@ Route::middleware("admin")->namespace("Admin")->prefix("admin")->name("admin.")-
     /*End Admin Round Trips Routes*/
 
     /*Admin Ride Routes*/
+    Route::delete("rides/{id}/delete", "AdminRideController@destroy")->name("rides.destroy");
+    Route::get("rides/{id}/edit", "AdminRideController@edit")->name("rides.edit");
+    Route::put("rides/{id}/update", "AdminRideController@update");
+    Route::get("rides/assign/{driver_id}/{ride_id}", "AdminRideController@assign");
     Route::get("rides/bid/{id}/select", "AdminRideController@select")->name("rides.bid.select");
     Route::get("rides/bid/{id}/change", "AdminRideController@change")->name("rides.bid.change");
     Route::get("rides/approved", "AdminRideController@approved")->name("rides.approved");

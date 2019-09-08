@@ -14,7 +14,7 @@
                         <h3 class="card-header">{{$page}} Rides</h3>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            @if(auth()->guard('driver')->user()->has('car'))
+                            @if(auth()->guard('driver')->user()->car)
                                 @if(count($rides)>0)
                                     @foreach($rides as $ride)
                                         Ride #{{$ride->id}}

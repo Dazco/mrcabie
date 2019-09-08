@@ -19,6 +19,15 @@
     <!-- Custom styles for this template-->
     <link href="{{url('admin/css/sb-admin-2.min.css')}}" rel="stylesheet">
 
+    <style>
+        @media (max-width: 546px){
+            .container-fluid{
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+        }
+    </style>
+
     @yield("styles")
 
 </head>

@@ -102,7 +102,7 @@ class RideController extends Controller
                 'prices' => [$price]
             ];
         }
-        $trip->prices[0]->part_amount = ceil($trip->prices[0]->amount * 0.3);
+        $trip->prices[0]->part_amount = ceil($trip->prices[0]->amount * 0.15);
         $data = $request->all();
         return view("frontend.paynow", compact("trip", "data", "content"));
     }
@@ -164,7 +164,7 @@ class RideController extends Controller
         ]);
 
         if($request->payment == "part"){
-            $amount = ceil($amount * 0.3);
+            $amount = ceil($amount * 0.15);
         }
         // Generate Signature
         $secretKey = "ea90ad6f6e1c58a13f7b9c7e2f64dbc359e74267";
@@ -219,7 +219,7 @@ class RideController extends Controller
                 $ride->client->notify(new RideBooked($ride));
                 Notification::send(Admin::all(), new RideBooked($ride));
                 Notification::send(Driver::where("is_approved", true)->where("is_active",true)->get()->all(), new RideBooked($ride));
-                return view("frontend.notify", compact("is_success"));
+                return view("frontend.notify", compact("is_success", "ride"));
             }else{
                 //notify
                 $ride->payment_status = $request->txStatus;

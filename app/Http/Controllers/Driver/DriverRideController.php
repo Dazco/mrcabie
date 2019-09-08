@@ -21,7 +21,7 @@ class DriverRideController extends Controller
     //
     public function index(){
         $driver = Auth::guard("driver")->user();
-        $rides = Ride::where("payment_status", "SUCCESS")->where("ride_status", "BOOKED")->whereDoesntHave("bids", function(Builder $q) use ($driver){
+        $rides = Ride::where("payment_status", "SUCCESS")->where("ride_status", "BOOKED")->has('category')->whereDoesntHave("bids", function(Builder $q) use ($driver){
             $q->where("driver_id", $driver->id);
         })->with("client")->paginate(15);
         $page = "NEW";
@@ -85,6 +85,7 @@ class DriverRideController extends Controller
         $driver = Auth::guard("driver")->user();
         $ride = Ride::with("client")->with("category")->findorFail($id);
         $bid =  Bid::where("driver_id", $driver->id)->where("ride_id",$ride->id)->first();
+
         return view("driver.rides.show", compact("ride", "bid"));
     }
 
@@ -100,7 +101,7 @@ class DriverRideController extends Controller
         $driver = Auth::guard("driver")->user();
         $bid = $driver->bids()->findOrfail($id);
         if($bid->status == "APPROVED"){
-            Ride::findOrFail($bid->ride->id)->update(["ride_status", "BOOKED"]);
+            Ride::findOrFail($bid->ride->id)->update(["ride_status"=>"BOOKED"]);
         }
         if($bid->status == "PENDING" || $bid->status == "APPROVED"){
             Notification::send(Admin::all(), new BidWithdrawn($bid));
