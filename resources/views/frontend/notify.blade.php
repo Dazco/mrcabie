@@ -86,4 +86,23 @@
             <h4 class="lead">{{$message}}</h4>
         @endif
     </div>
+
+    <!-- Start home-calltoaction Area -->
+    <section class="home-calltoaction-area relative">
+        <div class="container">
+            <div class="overlay overlay-bg"></div>
+            <div class="row align-items-center section-gap">
+                <div class="col-lg-8">
+                    <h1>Awesome Support</h1>
+                    <p>
+                        Our friendly staff will give undivided attention during working hours.
+                    </p>
+                </div>
+                <div class="col-lg-4 btn-left">
+                    <a href="{{route('contact')}}" class="primary-btn">Reach Our Support Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End home-calltoaction Area -->
 @endsection
