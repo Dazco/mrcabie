@@ -40,23 +40,31 @@
                     <img class="img-fluid" src="img/about-img.jpg" alt="">
                 </div>
                 <div class="col-lg-6 about-right">
-                    <h1>Who is Mr Cabie</h1>
-                    <h4>A Taxi Cab Service for Everyone</h4>
+                    <h1>Mr. Cabie taxi service</h1>
+                    <h4></h4>
                     <p>
-                        Mr. Cabie offers the most affordable and reliable cab services 24/7, You can get our best cab services   in Rudrapur, Haldwani, Nainital, Pantnagar, Haridwar, Dehradun and other cities
+                        Mr. Cabie provides Taxi service/ Cab service available at your doorstep on a single visit on our website or on a single call, the safest and the most affordable taxis / cabs near you, to book your cab you can go visit our booking page
+                        <a class="font-weight-bold" href="{{url("")}}">({{url("")}})</a> or  call us at our numbers. We operate one way and outstation cabs in 15+ cities like Rudrapur, Haldwani, New Delhi, Jaipur, Bareilly, Chandigarh, Dehradun, Haridwar and more.
                     </p>
-                    <h4>We offer 3 services:</h4>
+                    <h4 class="font-weight-bolder">
+                        Mr. Cabie is an affordable and quality Service provider of:
+                    </h4>
                     <ul>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Local Cabs (Inside City)</li>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Outstation Cabs (Outside City)</li>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> One Way Cabs (One Side Routes only)</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> One way taxi / cabs <a
+                                    href="{{route('oneway_cabs')}}">({{route("oneway_cabs")}})</a></li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Outstation taxi / cabs <a
+                                    href="{{url("")}}">({{url("")}})</a></li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Local taxi /cabs (Phone: <a class="font-weight-bolder" href="tel:911-911-6955">911-911-6955</a>)</li>
                     </ul>
-
-                    {{--<h5 class="mt-3">Local cab service</h5>
-                    <p>Cabs Inside the city, and within a limit of 30 km. This service is provided in Rudrapur, Pantnagar, Haldwani and Dehradun</p>
-
-                    <h5 class="mt-3">Local cab service</h5>
-                    <p>Cabs Inside the city, and within a limit of 30 km. This service is provided in Rudrapur, Pantnagar, Haldwani and Dehradun</p>--}}
+                    <h4 class="font-weight-bolder">
+                        While booking your taxi / cab never worry as we
+                    </h4>
+                    <ul>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Inspect our cabs regularly</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Verify our drivers</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Have a cancellation policy too. (call us at <a class="font-weight-bolder" href="tel:911-911-6955">911-911-6955</a> to know more on this)</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Have 24*7 helpline number <a class="font-weight-bolder" href="tel:911-911-8876 ">911-911-8876 </a> , <a class="font-weight-bolder" href="tel:911-911-6955">911-911-6955</a> </li>
+                    </ul>
                 </div>
             </div>
             <h2 class="text-center mb-4">Popular Routes</h2>

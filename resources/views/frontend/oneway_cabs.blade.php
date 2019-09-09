@@ -7,7 +7,7 @@
 @endsection
 
 @section('title')
-    Oneway Cabs - MRCABIE
+    One way cabs / one side taxi
 @endsection
 
 @section('styles')
@@ -61,7 +61,7 @@
                 <div class="carousel-inner">
                     @for($i=0; $i<count($media); $i++)
                         <div class="carousel-item {{$i==0?'active':''}}">
-                            <img class="d-block w-100" src="{{$media[$i]->image}}" alt="First slide" style="max-height: 500px;">
+                            <img class="d-block w-100" src="{{$media[$i]->image}}" alt="Mr. Cabie one way cabs" style="max-height: 500px;" title="Mr. Cabie one way cabs">
                         </div>
                     @endfor
                 </div>
@@ -199,26 +199,22 @@
             <div class="row align-items-center">
                 <div class="col-sm-4">
                     <ul>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Rudrapur to Nainital</li>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Delhi to Nainital</li>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Rudrapur to Delhi</li>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Rudrapur to Haldwani</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Haldwani to Delhi Airport</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Haridwar to Delhi Airport</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Chandigarh to Delhi</li>
                     </ul>
                 </div>
                 <div class="col-sm-4">
                     <ul>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Haldwani to Delhi</li>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Haridwar to Delhi</li>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Delhi to Rudrapur</li>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Pune to Mumbai</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Bareilly to Delhi</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Rudrapur to Delhi Airport</li>
                     </ul>
                 </div>
                 <div class="col-sm-4">
                     <ul>
                         <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Dehradun to Delhi</li>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Chandigarh to Delhi</li>
                         <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Nainital to Delhi</li>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Haldwani to Nainital</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Jaipur to Delhi</li>
                     </ul>
                 </div>
             </div>
