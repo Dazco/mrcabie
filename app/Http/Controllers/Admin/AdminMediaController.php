@@ -103,6 +103,10 @@ class AdminMediaController extends Controller
         //
     }
     public function multiDestroy(Request $request){
+        if(!array_key_exists("delete-me", $request->all())){
+            Session::flash("alert-danger", "Please Select 1 or more images from the list you want to delete");
+            return redirect()->back();
+        }
         foreach ($request->all()['delete-me'] as $mediaId){
             $media = Media::findOrfail($mediaId);
             if($media->photo) {
