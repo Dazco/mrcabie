@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="map-wrap" style="width:100%; height: 445px;" id="map">
                     <!-- Start Map -->
-                    <iframe width="100%" height="445" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(Mr%20Cabie)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe>
+                    <iframe width="100%" height="445" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=28.974744, 79.3963951&amp;q=Rhone-e%20208%2C%20Omaxe%2C%20%20Rudrapur%2C%20%20Uttarakhand+(MR%20CABIE)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">gps coordinates</a></iframe>
                     <!-- End Map -->
                 </div>
                 <div class="col-lg-4 d-flex flex-column address-wrap">
@@ -45,9 +45,9 @@
                             <span class="lnr lnr-home"></span>
                         </div>
                         <div class="contact-details">
-                            <h5>Binghamton, New York</h5>
+                            <h5>Rudrapur,  Uttarakhand</h5>
                             <p>
-                                4343 Hinkle Deegan Lake Road
+                                Rhone-e 208, Omaxe
                             </p>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                             <span class="lnr lnr-envelope"></span>
                         </div>
                         <div class="contact-details">
-                            <h5>admin@mrcabie.com</h5>
+                            <h5>info@mrcabie.com</h5>
                             <p>Send us your query anytime!</p>
                         </div>
                     </div>

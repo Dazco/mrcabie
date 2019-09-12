@@ -75,7 +75,7 @@
             <div class="col-lg-2 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
                     <h6>Our Contacts</h6>
-                    <p> 22 Ayodele Street, BRT Terminal, Fadeyi , Lagos</p>
+                    <p>  Rhone-e 208, Omaxe,  Rudrapur,  Uttarakhand </p>
                     <ul>
                         <li><span class="text-warning font-weight-bold">Tel:</span> 911-911-6955</li>
                         <li><span class="text-warning font-weight-bold">Tel:</span> 911-911-8876</li>
@@ -94,19 +94,9 @@
             </div>
             <div class="col-lg-4  col-md-6 col-sm-6">
                 <div class="single-footer-widget">
-                    <h6>Newsletter</h6>
-                    <p>Stay updated with our latest</p>
-                    <div class="" id="mc_embed_signup">
-                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-                            <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-                            <button class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span></button>
-                            <div style="position: absolute; left: -5000px;">
-                                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-                            </div>
-
-                            <div class="info"></div>
-                        </form>
-                    </div>
+                    <h6>Policies</h6>
+                    <p><a class="text-warning" target="_blank" href="https://app.termly.io/document/terms-and-conditions/ae1a7f41-4177-40d0-be1e-708f534baa85">Terms and Conditions</a></p>
+                    <p><a class="text-warning" href="{{route('cancellation')}}">Cancellation Policy</a></p>
                 </div>
             </div>
             <p class="mt-80 mx-auto footer-text col-lg-12">

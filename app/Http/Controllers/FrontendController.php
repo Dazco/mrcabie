@@ -57,4 +57,8 @@ class FrontendController extends Controller
         });
         return "Your Message has been sent successfully";
     }
+
+    public function cancellation(){
+        return view("frontend.cancellation");
+    }
 }

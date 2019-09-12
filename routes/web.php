@@ -23,6 +23,7 @@ Route::post('paynow', 'RideController@paynow')->name("paynow");
 Route::post('redirect', 'RideController@redirectToPaymentGateway')->name("redirect");
 Route::post('return', 'RideController@return')->name("return");
 Route::post('notify', 'RideController@notify')->name("notify");
+Route::get('cancellation', 'FrontendController@cancellation')->name('cancellation');
 /*End of Main Site Routes*/
 
 
