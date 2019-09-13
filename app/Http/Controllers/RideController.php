@@ -167,13 +167,13 @@ class RideController extends Controller
             $amount = ceil($amount * 0.15);
         }
         // Generate Signature
-        $secretKey = "ea90ad6f6e1c58a13f7b9c7e2f64dbc359e74267";
+        $secretKey = "ab1fd86e089a9c390a8fdff02a1dba7901fc074e";
         $data = array(
-            "appId" => "68544b8e9892704cd24832604586",
+            "appId" => "22822fe128f01c76c8493dbaa22822",
             "orderId" => $ride->id,
             "orderAmount" => $amount,
             "orderCurrency" => "INR",
-            "orderNote" => "test",
+            "orderNote" => "PRODUCTION",
             "customerName" => $client->name,
             "customerPhone" => $client->phone,
             "customerEmail" => $client->email,
@@ -193,7 +193,7 @@ class RideController extends Controller
         return view("frontend.redirect", compact("data"));
     }
     public function return(Request $request){
-        $secretKey = "ea90ad6f6e1c58a13f7b9c7e2f64dbc359e74267";
+        $secretKey = "ab1fd86e089a9c390a8fdff02a1dba7901fc074e";
         $orderId = $request->orderId;
         $orderAmount = $request->orderAmount;
         $referenceId = $request->referenceId;
@@ -233,7 +233,7 @@ class RideController extends Controller
         }
     }
     public function notify(Request $request){
-        $secretKey = "ea90ad6f6e1c58a13f7b9c7e2f64dbc359e74267";
+        $secretKey = "ab1fd86e089a9c390a8fdff02a1dba7901fc074e";
         $orderId = $request->orderId;
         $orderAmount = $request->orderAmount;
         $referenceId = $request->referenceId;
