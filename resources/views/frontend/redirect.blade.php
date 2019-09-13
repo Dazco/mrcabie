@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="text-center align-self-center text-heading mt-120 pt-120 pb-120">
-        <form id="redirectForm" method="post" action="https://test.cashfree.com/billpay/checkout/post/submit">
+        <form id="redirectForm" method="post" action="https://www.cashfree.com/checkout/post/submit">
             <input type="hidden" name="appId" value="{{$data['appId']}}"/>
             <input type="hidden" name="orderId" value="{{$data['orderId']}}"/>
             <input type="hidden" name="orderAmount" value="{{$data['orderAmount']}}"/>
