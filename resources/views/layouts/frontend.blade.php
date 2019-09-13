@@ -97,7 +97,7 @@
                     <h6>Policies</h6>
                     <p><a class="text-warning" target="_blank" href="https://app.termly.io/document/terms-and-conditions/ae1a7f41-4177-40d0-be1e-708f534baa85">Terms and Conditions</a></p>
                     <p><a class="text-warning" href="{{route('cancellation')}}">Cancellation Policy</a></p>
-                    <p><a class="text-warning" href="https://app.termly.io/document/privacy-notice/fdac810a-832c-4cf6-9e3f-676d726c0b99">Privacy Policy</a></p>
+                    <p><a class="text-warning" target="_blank" href="https://app.termly.io/document/privacy-notice/fdac810a-832c-4cf6-9e3f-676d726c0b99">Privacy Policy</a></p>
                 </div>
             </div>
             <p class="mt-80 mx-auto footer-text col-lg-12">
