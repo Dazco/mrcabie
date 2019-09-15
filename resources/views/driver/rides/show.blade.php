@@ -58,19 +58,21 @@
                                     </p>
 
                                     <hr>
-                                    <h3 class="my-4">Client Details</h3>
-                                    <p class="row mb-3">
-                                        <span class="col-sm-3">NAME</span>
-                                        <span class="col-sm-9 text-dark">{{strtoupper($ride->client->name)}}</span>
-                                    </p>
-                                    <p class="row mb-3">
-                                        <span class="col-sm-3">EMAIL</span>
-                                        <span class="col-sm-9 text-dark">{{$ride->client->email}}</span>
-                                    </p>
-                                    <p class="row mb-3">
-                                        <span class="col-sm-3">PHONE NO.</span>
-                                        <span class="col-sm-9 text-danger">{{strtoupper($ride->client->phone)}}</span>
-                                    </p>
+                                    @if($is_driver)
+                                        <h3 class="my-4">Client Details</h3>
+                                        <p class="row mb-3">
+                                            <span class="col-sm-3">NAME</span>
+                                            <span class="col-sm-9 text-dark">{{strtoupper($ride->client->name)}}</span>
+                                        </p>
+                                        <p class="row mb-3">
+                                            <span class="col-sm-3">EMAIL</span>
+                                            <span class="col-sm-9 text-dark">{{$ride->client->email}}</span>
+                                        </p>
+                                        <p class="row mb-3">
+                                            <span class="col-sm-3">PHONE NO.</span>
+                                            <span class="col-sm-9 text-danger">{{strtoupper($ride->client->phone)}}</span>
+                                        </p>
+                                    @endif
                                     @if($bid)
                                         @if($bid->status == "PENDING" && $ride->ride_status == "BOOKED")
                                             <h4 class="mt-5 text-center text-danger">You have already applied for this
@@ -96,11 +98,14 @@
                                         @elseif($bid->status == "ENDED" && $ride->ride_status == "ENDED")
                                             <h3 class="mt-5 text-center text-danger">This Ride has been closed</h3>
                                         @endif
-                                    @else
+
+                                    @elseif($ride->ride_status == "BOOKED")
                                         <p class="text-center"><a href="{{route("driver.rides.apply", $ride->id)}}"
                                                                   type="button" class="btn btn-outline-success col-sm-6"
                                                                   onclick="if(!confirm('Do you really want to apply for this ride?')) return false;">Apply</a>
                                         </p>
+                                    @else
+                                        <h3 class="mt-5 text-center text-danger">You can no longer bid for this Ride</h3>
                                     @endif
                                 </div>
                             </div>

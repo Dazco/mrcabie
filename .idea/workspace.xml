@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1cf1417-d1a2-4df4-bf07-56cf210a6fea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/redirect.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/redirect.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Driver/DriverRideController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Driver/DriverRideController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/driver/rides/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/driver/rides/show.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,20 +48,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="frontend.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontend.blade.php">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/driver/rides/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="99" column="61" selection-start-line="99" selection-start-column="61" selection-end-line="99" selection-end-column="61" />
+            <state relative-caret-position="451">
+              <caret line="107" column="113" selection-start-line="107" selection-start-column="113" selection-end-line="107" selection-end-column="113" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redirect.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/frontend/redirect.blade.php">
+      <file leaf-file-name="DriverRideController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Driver/DriverRideController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="99" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
+            <state relative-caret-position="108">
+              <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -75,7 +77,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>today</find>
       <find>pickup_date</find>
       <find>pickup_time</find>
       <find>return_time</find>
@@ -105,6 +106,7 @@
       <find>who is</find>
       <find>htt</find>
       <find>tel</find>
+      <find>clien</find>
     </findStrings>
     <replaceStrings>
       <replace>abie</replace>
@@ -147,11 +149,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
         <option value="$PROJECT_DIR$/resources/views/driver/rides/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/driver/rides/show.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Driver/DriverRideController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/rides/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminRideController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/rides/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/rides/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/notify.blade.php" />
@@ -167,6 +166,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/RideController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/frontend.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/redirect.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminRideController.php" />
+        <option value="$PROJECT_DIR$/resources/views/driver/rides/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Driver/DriverRideController.php" />
       </list>
     </option>
   </component>
@@ -311,22 +313,6 @@
             <path>
               <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
               <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="seeds" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -334,61 +320,6 @@
               <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="drivers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="media" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="rides" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="round_trips" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="slideshow" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="trips" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="mrcabie" type="b2602c69:ProjectViewProjectNode" />
@@ -402,7 +333,8 @@
               <item name="mrcabie" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="driver" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rides" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -412,7 +344,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="redire&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/redirect.blade.php&#10;front&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;Ride&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;notify&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/notify.blade.php&#10;Fro&#9;null&#9;null&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;conta&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/contact.blade.php&#10;frontend&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;oneway&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/oneway_cabs.blade.php&#10;about&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/about.blade.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;AdminSlid&#9;null&#9;null&#10;AdminMedia&#9;null&#9;null&#10;.gitig&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/.gitignore&#10;fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;no&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/notify.blade.php&#10;frontend/inde&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;pay&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;pa&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;rides/index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/rides/index.blade.php&#10;show&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/rides/show.blade.php&#10;main&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/css/main.css&#10;edit&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/trip_categories/edit.blade.php&#10;adm&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;driver.b&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/driver.blade.php&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver/rides/index.blade.php&#10;Ri&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;driver/rides/index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver/rides/index.blade.php&#10;driver/rides/show&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver/rides/show.blade.php&#10;Dr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;AdminD&#9;null&#9;null&#10;driver/&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver&#10;AdminRide&#9;null&#9;null&#10;Driver&#9;null&#9;null&#10;admin/&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/admin&#10;pric&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Price.php&#10;Trip&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Trip.php&#10;sele&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/select.blade.php&#10;redirec&#9;null&#9;null&#10;login&#9;null&#9;null&#10;crea&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_10_025732_create_round_trips_table.php&#10;Rou&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/RoundTrip.php&#10;paynow&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;onewa&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/oneway_cabs.blade.php&#10;Prices&#9;null&#9;null&#10;Pr&#9;null&#9;null&#10;select&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/select.blade.php&#10;Admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminTripController.php&#10;RideC&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;create_ad&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_161103_create_admins_table.php" />
+    <property name="SearchEverywhereHistoryKey" value="Bid&#9;null&#9;null&#10;Ride&#9;null&#9;null&#10;Admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminRideController.php&#10;DriverRide&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;create_adm&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_161103_create_admins_table.php&#10;redire&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/redirect.blade.php&#10;front&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;notify&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/notify.blade.php&#10;Fro&#9;null&#9;null&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;conta&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/contact.blade.php&#10;frontend&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;oneway&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/oneway_cabs.blade.php&#10;about&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/about.blade.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;AdminSlid&#9;null&#9;null&#10;AdminMedia&#9;null&#9;null&#10;.gitig&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/.gitignore&#10;fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;no&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/notify.blade.php&#10;frontend/inde&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;pay&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;pa&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;rides/index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/rides/index.blade.php&#10;show&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/rides/show.blade.php&#10;main&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/css/main.css&#10;edit&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/trip_categories/edit.blade.php&#10;adm&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;driver.b&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/driver.blade.php&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver/rides/index.blade.php&#10;Ri&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;driver/rides/index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver/rides/index.blade.php&#10;driver/rides/show&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver/rides/show.blade.php&#10;Dr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;AdminD&#9;null&#9;null&#10;driver/&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver&#10;AdminRide&#9;null&#9;null&#10;Driver&#9;null&#9;null&#10;admin/&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/admin&#10;pric&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Price.php&#10;Trip&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Trip.php&#10;sele&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/select.blade.php&#10;redirec&#9;null&#9;null&#10;login&#9;null&#9;null&#10;crea&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_10_025732_create_round_trips_table.php&#10;Rou&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/RoundTrip.php&#10;paynow&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;onewa&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/oneway_cabs.blade.php&#10;Prices&#9;null&#9;null&#10;Pr&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;MariaDB" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -495,12 +427,13 @@
       <workItem from="1568046735944" duration="3504000" />
       <workItem from="1568067300893" duration="1631000" />
       <workItem from="1293866835778" duration="4379000" />
-      <workItem from="1568380376437" duration="1266000" />
+      <workItem from="1568380376437" duration="2490000" />
+      <workItem from="1568567183533" duration="4833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="416804000" />
+    <option name="totallyTimeSpent" value="422861000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,9 +451,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32994923" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007657" side_tool="true" weight="0.9576988" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3294893" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4992343" weight="0.93080723" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.30635402" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -545,34 +478,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_08_225004_create_trip_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_08_225235_create_trips_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_28_225409_create_banners_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="4" column="45" lean-forward="true" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_28_214547_create_slideshows_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_24_234910_create_read_befores_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -692,27 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/driver/rides/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="107" column="108" selection-start-line="107" selection-start-column="108" selection-end-line="107" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://be742312-b49b-471e-97da-64388cbb138f/schema/mrcabie/table/bids">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://be742312-b49b-471e-97da-64388cbb138f/schema/mrcabie/table/rides">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/driver/rides/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -724,13 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="67" column="40" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="67" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Driver/DriverRideController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="104" column="9" lean-forward="true" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -759,13 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="80" column="12" lean-forward="true" selection-end-line="112" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Ride.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="20" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="27" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -801,13 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="144" column="70" selection-start-line="144" selection-start-column="70" selection-end-line="144" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminRideController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="116" column="36" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -888,6 +751,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/redirect.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontend.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -895,10 +765,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/redirect.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_08_161103_create_admins_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="99" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
+        <state relative-caret-position="36">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Ride.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminRideController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Bid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/driver/rides/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="107" column="113" selection-start-line="107" selection-start-column="113" selection-end-line="107" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://be742312-b49b-471e-97da-64388cbb138f/schema/mrcabie/table/rides">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://be742312-b49b-471e-97da-64388cbb138f/schema/mrcabie/table/bids">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://be742312-b49b-471e-97da-64388cbb138f/schema/mrcabie/table/drivers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Driver/DriverRideController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
         </state>
       </provider>
     </entry>

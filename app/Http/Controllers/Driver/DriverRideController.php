@@ -84,9 +84,12 @@ class DriverRideController extends Controller
     public function show($id){
         $driver = Auth::guard("driver")->user();
         $ride = Ride::with("client")->with("category")->findorFail($id);
+        $is_driver = (bool)$ride->bids()->whereHas("driver", function ($q) use ($driver){
+            $q->where("driver_id", $driver->id)->whereIn('status',['APPROVED', 'STARTED', 'ENDED']);
+        })->count();
         $bid =  Bid::where("driver_id", $driver->id)->where("ride_id",$ride->id)->first();
 
-        return view("driver.rides.show", compact("ride", "bid"));
+        return view("driver.rides.show", compact("ride", "bid", "is_driver"));
     }
 
     public function apply($id){
