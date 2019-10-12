@@ -28,6 +28,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     @yield("styles")
     <link rel="stylesheet" href="{{url('css/main.css')}}">
+
+    <!-- Global site tag (gtag.js) - Google Ads: 747383848 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-747383848"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-747383848');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139025378-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-139025378-1');
+    </script>
 </head>
 <body class="loader-active">
 <!--== Preloader Area Start ==-->
