@@ -21,7 +21,7 @@ class AdminPagesController extends Controller
            'content' => 'required|string'
         ]);
 
-        $page = Page::where('type', $type)->firstOrCreate(['type' => $type, 'content' => '']);
+        $page = Page::where('type', $type)->firstOrCreate([],['type' => $type, 'content' => '']);
         $page->update([
             'content' => $request->all()['content']
         ]);
@@ -36,7 +36,7 @@ class AdminPagesController extends Controller
     }
 
     public function services_post(Request  $request){
-        $services = Services::firstOrCreate(['local' => '', 'outstation' => '', 'oneway' => '']);
+        $services = Services::firstOrCreate([],['local' => '', 'outstation' => '', 'oneway' => '']);
         $services->update([
             'local' => $request->local ?? '',
             'outstation' => $request->outstation ?? '',
