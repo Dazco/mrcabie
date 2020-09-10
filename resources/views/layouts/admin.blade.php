@@ -66,6 +66,22 @@
             Main Site
         </div>
 
+        <!-- Nav Item - PAGEs Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pages_collapse" aria-expanded="true" aria-controls="pages_collapse">
+                <i class="fa fa-fw fa-book-open"></i>
+                <span>Pages</span>
+            </a>
+            <div id="pages_collapse" class="collapse" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Edit:</h6>
+                    <a class="collapse-item" href="{{route('admin.page_get', 'home')}}"><i class="fa fa-fw fa-book-open"></i> Home</a>
+                    <a class="collapse-item" href="{{route('admin.page_get', 'about')}}"><i class="fa fa-fw fa-book-open"></i> About</a>
+                    <a class="collapse-item" href="{{route('admin.services_get')}}"><i class="fa fa-fw fa-book-open"></i> Services</a>
+                </div>
+            </div>
+        </li>
+
         <!-- Nav Item - Uploads Collapse Menu -->
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#banner_collapse" aria-expanded="true" aria-controls="banner_collapse">

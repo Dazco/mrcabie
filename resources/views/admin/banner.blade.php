@@ -32,7 +32,7 @@
                 </div>
                 <div class="form-group">
                     {!! Form::label('paragraph','Paragraph:') !!}
-                    {!! Form::text('paragraph',old('paragraph', $banner?$banner->paragraph:null),['class'=>'form-control']) !!}
+                    {!! Form::textarea('paragraph',old('paragraph', $banner?$banner->paragraph:null),['class'=>'form-control']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('is_clear','Hide Image?:') !!}

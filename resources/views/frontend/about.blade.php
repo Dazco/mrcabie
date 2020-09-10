@@ -24,7 +24,8 @@
                     <h1 class="text-white">
                         About Us
                     </h1>
-                    <p class="text-white link-nav"><a href="{{route('home')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="{{route('about')}}"> About Us</a></p>
+                    <p class="text-white link-nav"><a href="{{route('home')}}">Home </a> <span
+                            class="lnr lnr-arrow-right"></span> <a href="{{route('about')}}"> About Us</a></p>
                 </div>
             </div>
         </div>
@@ -43,27 +44,43 @@
                     <h1>Mr. Cabie taxi service</h1>
                     <h4></h4>
                     <p>
-                        Mr. Cabie provides Taxi service/ Cab service available at your doorstep on a single visit on our website or on a single call, the safest and the most affordable taxis / cabs near you, to book your cab you can go visit our booking page
-                        <a class="font-weight-bold" href="{{url("")}}">({{url("")}})</a> or  call us at our numbers. We operate one way and outstation cabs in 15+ cities like Rudrapur, Haldwani, New Delhi, Jaipur, Bareilly, Chandigarh, Dehradun, Haridwar and more.
+                        @if($page && $page->content)
+                            {{$page->content}}
+                        @else
+                            Mr. Cabie provides Taxi service/ Cab service available at your doorstep on a single visit on
+                            our website or on a single call, the safest and the most affordable taxis / cabs near you,to
+                            book your cab you can go visit our booking page
+                            <a class="font-weight-bold" href="{{url("")}}">({{url("")}})</a> or  call us at our numbers.
+                            We operate one way and outstation cabs in 15+ cities like Rudrapur, Haldwani, New Delhi,
+                            Jaipur, Bareilly, Chandigarh, Dehradun, Haridwar and more.
+                        @endif
                     </p>
                     <h4 class="font-weight-bolder">
                         Mr. Cabie is an affordable and quality Service provider of:
                     </h4>
                     <ul>
                         <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> One way taxi / cabs <a
-                                    href="{{route('oneway_cabs')}}">({{route("oneway_cabs")}})</a></li>
+                                href="{{route('oneway_cabs')}}">({{route("oneway_cabs")}})</a></li>
                         <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Outstation taxi / cabs <a
-                                    href="{{url("")}}">({{url("")}})</a></li>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Local taxi /cabs (Phone: <a class="font-weight-bolder" href="tel:911-911-6955">911-911-6955</a>)</li>
+                                href="{{url("")}}">({{url("")}})</a></li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Local taxi /cabs (Phone:
+                            <a class="font-weight-bolder" href="tel:911-911-6955">911-911-6955</a>)
+                        </li>
                     </ul>
                     <h4 class="font-weight-bolder">
                         While booking your taxi / cab never worry as we
                     </h4>
                     <ul>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Inspect our cabs regularly</li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Inspect our cabs regularly
+                        </li>
                         <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Verify our drivers</li>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Have a cancellation policy too. (call us at <a class="font-weight-bolder" href="tel:911-911-6955">911-911-6955</a> to know more on this)</li>
-                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Have 24*7 helpline number <a class="font-weight-bolder" href="tel:911-911-8876 ">911-911-8876 </a> , <a class="font-weight-bolder" href="tel:911-911-6955">911-911-6955</a> </li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Have a cancellation policy
+                            too. (call us at <a class="font-weight-bolder" href="tel:911-911-6955">911-911-6955</a> to
+                            know more on this)
+                        </li>
+                        <li class="font-weight-bold"><i class="fa fa-check text-warning"></i> Have 24*7 helpline number
+                            <a class="font-weight-bolder" href="tel:911-911-8876 ">911-911-8876 </a> , <a
+                                class="font-weight-bolder" href="tel:911-911-6955">911-911-6955</a></li>
                     </ul>
                 </div>
             </div>
@@ -108,7 +125,8 @@
                 @if($media && count($media) > 0)
                     @foreach($media as $photo)
                         <div class="col-lg-4 mb-3">
-                            <a href="{{$photo->image}}" class="img-gal"><img class="img-fluid" src="{{$photo->image}}" alt="{{$photo->title}}"></a>
+                            <a href="{{$photo->image}}" class="img-gal"><img class="img-fluid" src="{{$photo->image}}"
+                                                                             alt="{{$photo->title}}"></a>
                         </div>
                     @endforeach
                 @else

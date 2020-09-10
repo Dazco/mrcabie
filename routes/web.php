@@ -49,6 +49,10 @@ Route::post('/register/driver', 'Auth\RegisterController@createDriver')->name('r
 
 Route::middleware("admin")->namespace("Admin")->prefix("admin")->name("admin.")->group(function(){
     Route::get("dashboard", "AdminController@dashboard")->name("dashboard");
+    Route::get("pages/services", "AdminPagesController@services_get")->name("services_get");
+    Route::post("pages/services", "AdminPagesController@services_post")->name("services_post");
+    Route::get("pages/{page}", "AdminPagesController@page_get")->name("page_get");
+    Route::post("pages/{page}", "AdminPagesController@page_post")->name("page_post");
     Route::get("banner", "AdminController@banner_get")->name("banner_get");
     Route::post("banner/{id}", "AdminController@banner_post")->name("banner_post");
     Route::get("read_before_you_book", "AdminController@read_before_you_book_get")->name('read_before_get');

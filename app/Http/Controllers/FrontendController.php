@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Banner;
 use App\Media;
+use App\Page;
+use App\Services;
 use App\Slideshow;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -14,18 +16,22 @@ class FrontendController extends Controller
     /*Homepage Section*/
     public function index(){
         $banner = Banner::first();
-        return view("frontend.index", compact("banner"));
+        $page = Page::where('type', 'home')->first();
+        $services = Services::first();
+        return view("frontend.index", compact("banner", 'page', 'services'));
     }
 
     /*About Section*/
     public function about(){
         $media = Media::latest()->take(6)->get();
-        return view("frontend.about", compact("media"));
+        $page = Page::where('type', 'about')->first();
+        return view("frontend.about", compact("media", "page"));
     }
 
     /*Services Section*/
     public function services(){
-        return view("frontend.services");
+        $services = Services::first();
+        return view("frontend.services", compact("services"));
     }
 
     /*Oneway Cabs Section*/
