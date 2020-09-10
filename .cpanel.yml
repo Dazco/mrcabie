@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/cotbzhluee2d/mrcabie
+    - /bin/cp -R * $DEPLOYPATH
+    - php /home/cotbzhluee2d/mrcabie/artisan migrate
