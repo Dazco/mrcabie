@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1cf1417-d1a2-4df4-bf07-56cf210a6fea" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminPagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminPagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,36 +32,6 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="mrcabie@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="mrcabie@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="mrcabie@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="mrcabie: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,9 +48,6 @@
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="PhpServers">
-    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -203,17 +171,26 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="fron&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;Bid&#9;null&#9;null&#10;Ride&#9;null&#9;null&#10;Admin&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Admin/AdminRideController.php&#10;DriverRide&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;create_adm&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_08_161103_create_admins_table.php&#10;redire&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/redirect.blade.php&#10;front&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;notify&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/notify.blade.php&#10;Fro&#9;null&#9;null&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/routes/web.php&#10;conta&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/contact.blade.php&#10;frontend&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;oneway&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/oneway_cabs.blade.php&#10;about&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/about.blade.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;AdminSlid&#9;null&#9;null&#10;AdminMedia&#9;null&#9;null&#10;.gitig&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/.gitignore&#10;fro&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/frontend.blade.php&#10;no&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/notify.blade.php&#10;frontend/inde&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/index.blade.php&#10;pay&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;pa&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;rides/index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/rides/index.blade.php&#10;show&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/rides/show.blade.php&#10;main&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/css/main.css&#10;edit&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/admin/trip_categories/edit.blade.php&#10;adm&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/admin.blade.php&#10;driver.b&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/layouts/driver.blade.php&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver/rides/index.blade.php&#10;Ri&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/RideController.php&#10;driver/rides/index&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver/rides/index.blade.php&#10;driver/rides/show&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver/rides/show.blade.php&#10;Dr&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Http/Controllers/Driver/DriverRideController.php&#10;AdminD&#9;null&#9;null&#10;driver/&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/driver&#10;AdminRide&#9;null&#9;null&#10;Driver&#9;null&#9;null&#10;admin/&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/public/admin&#10;pric&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Price.php&#10;Trip&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/Trip.php&#10;sele&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/select.blade.php&#10;redirec&#9;null&#9;null&#10;login&#9;null&#9;null&#10;crea&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/database/migrations/2019_07_10_025732_create_round_trips_table.php&#10;Rou&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/app/RoundTrip.php&#10;paynow&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/paynow.blade.php&#10;onewa&#9;FILE&#9;file://C:/xampp/htdocs/mrcabie/resources/views/frontend/oneway_cabs.blade.php&#10;Prices&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;MariaDB" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\mrcabie" />
       <recent name="C:\xampp\htdocs\mrcabie\resources\views\admin" />
       <recent name="C:\xampp\htdocs\mrcabie\resources\views\admin\drivers" />
       <recent name="C:\xampp\htdocs\mrcabie\resources\views\driver" />
@@ -282,6 +259,8 @@
       <workItem from="1599586343068" duration="15044000" />
       <workItem from="1599731353093" duration="1330000" />
       <workItem from="1599729963390" duration="4344000" />
+      <workItem from="1600018704719" duration="520000" />
+      <workItem from="1600020355878" duration="5056000" />
     </task>
     <servers />
   </component>
@@ -307,6 +286,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599731971417">
@@ -321,9 +301,10 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="383" y="174" key="run.anything.popup/72.27.1294.741@72.27.1294.741" timestamp="1599614268290" />
-    <state x="382" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1599734524056">
-      <screen x="72" y="27" width="1294" height="741" />
+    <state x="368" y="69" width="798" height="754" key="search.everywhere.popup" timestamp="1600036688855">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="368" y="69" width="798" height="754" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600036688855" />
     <state x="382" y="89" width="672" height="678" key="search.everywhere.popup/72.27.1294.741@72.27.1294.741" timestamp="1599734524056" />
   </component>
   <component name="masterDetails">

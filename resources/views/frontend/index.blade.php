@@ -49,6 +49,8 @@
                     <p class="pt-10 pb-10 text-white">
                         {{$banner?$banner->paragraph:'In just a few minutes, you can book your own taxi in the comforts of your home.'}}
                     </p>
+
+                    <a target="_blank" class="text-uppercase primary-btn mt-3" href="https://wa.me/message/LSJNQEHVPLQ5P1">Now Book your CAB on Whatsapp <i style="font-size:1.2rem;" class="fa fab fa-whatsapp text-success font-weight-bold"></i></a>
                 </div>
                 <div class="col-lg-4  col-md-6 header-right">
                     <h3 id="form_header" class="pt-5 text-black text-uppercase"><a class="text-black"
